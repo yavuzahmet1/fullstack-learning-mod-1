@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABLE</title>
+
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>KURS PROGRAMI</h1>
+    <table border="1">
+        <tr>
+            <th>DERSLER</th>
+            <th>Pazartesi</th>
+            <th>Salı</th>
+            <th>Çarşamba</th>
+        </tr>
+        <tr>
+            <td>Matematik</td>
+            <td>10:30-11:45</td>
+            <td>9:30-10:30</td>
+            <td>6:30-9:00</td>
+        </tr>
+        <tr>
+            <td>Fizik</td>
+            <td colspan="2">10:30-11:45</td>
+            
+            <td>6:30-9:00</td>
+        </tr>
+
+    </table>
+</body>
+</html>
