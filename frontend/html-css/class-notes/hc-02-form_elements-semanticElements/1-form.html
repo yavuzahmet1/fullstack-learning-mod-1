@@ -201,25 +201,55 @@
 
         <!-------->
         <!----SELECT---->
-        <label for="tatli">Sevdiğiniz Tatlılar</label>
-        <select name="sevilen-tatli" id="tatli">
-          <optgroup label="sütlü-tatlilar">
-            <option value="Tiramisu">Tiramisu</option>
-            <option value="San">San Sebastian</option>
-            <option value="Tirileçe" selected>Tirileçe</option>
-          </optgroup>
-          <optgroup label="serbetli-tatlilar">
-            <option value="halka">Halka Tatli</option>
-            <option value="pare">Şeker Pare</option>
-            <option value="kadayif">Kadayif Dolmasi</option>
-            <option value="baklava">Baklava</option>
-            <option value="kunefe">Künefe</option>
-          </optgroup>
-        </select>
+        <div class="selected-options">
+          <label for="tatli">Sevdiğiniz Tatlılar</label>
+          <select name="sevilen-tatli" id="tatli">
+            <optgroup label="sütlü-tatlilar">
+              <option value="Tiramisu">Tiramisu</option>
+              <option value="San">San Sebastian</option>
+              <option value="Tirileçe" selected>Tirileçe</option>
+            </optgroup>
+            <optgroup label="serbetli-tatlilar">
+              <option value="halka">Halka Tatli</option>
+              <option value="pare">Şeker Pare</option>
+              <option value="kadayif">Kadayif Dolmasi</option>
+              <option value="baklava">Baklava</option>
+              <option value="kunefe">Künefe</option>
+            </optgroup>
+          </select>
 
+        </div>
 
+        <!--DATALIST-->
+        <div class="dataList">
+
+          <label for="countries">Gitmek istediğiniz Ülkeler</label>
+          <input type="text" list="countries" name="country">
+          <datalist id="countries">
+            <option value="Germany"></option>,
+            <option value="USA"></option>
+            <option value="France"></option>
+            <option value="Turkiye"></option>
+          </datalist>
+        </div>
+
+        <!--TEXAREA-->
+        <div>
+          <label for="yorum"></label>
+          <textarea name="" id="yorum" placeholder="yorumunuz"></textarea>
+        </div>
+        <!--FIELDSET-->
+
+        <fieldset>
+          <legend>Kişisel Bilgiler</legend>
+          <label for="father">Baba Adı</label>
+          <input type="text" id="father" name="father">
+          <label for="mother">Anne Adı</label>
+          <input type="text" id="mother" name="mother">
+        </fieldset>
 
         <input type="submit" value="KAYDET" />
+        <input type="reset" value="TEMIZLE" />
       </form>
     </section>
     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
