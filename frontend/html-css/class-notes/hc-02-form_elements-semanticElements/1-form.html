@@ -1,225 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PERSONEL TANIMA FORMU</title>
-    <style>
-        body {
-          font-family: Arial, sans-serif;
-          background-color: #f4f4f4;
-          margin: 0;
-          padding: 0;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-  
-        .container {
-          background-color: white;
-          width: 50%;
-          padding: 20px;
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-          border-radius: 10px;
-        }
-  
-        header {
-          display: flex;
-          align-items: center;
-          background-color: orange;
-          padding: 10px;
-          border-radius: 10px 10px 0 0;
-          text-align: center;
-          color: white;
-          font-weight: bold;
-          font-size: 1.5em;
-        }
-  
-        header img {
-          margin-right: 15px;
-          border-radius: 10px;
-        }
-  
-        section {
-          margin-top: 20px;
-        }
-  
-        section div {
-          margin-bottom: 15px;
-        }
-  
-        label {
-          display: block;
-          margin-bottom: 5px;
-          font-weight: bold;
-        }
-  
-        input[type="text"],
-        input[type="password"],
-        input[type="number"],
-        input[type="email"],
-        input[type="tel"],
-        input[type="date"],        
-        input[type="file"],
-        select,
-        textarea {
-          width: 90%;
-          padding: 8px;
-          margin-bottom: 10px;
-          border: 1px solid #ccc;
-          border-radius: 5px;
-        }
-  
-        textarea {
-          resize: none;
-        }
-  
-        .buttons {
-          display: flex;
-          justify-content: space-between;
-        }
-  
-        .buttons input {
-          width: 48%;
-          padding: 10px;
-          border: none;
-          border-radius: 5px;
-          font-size: 1em;
-          cursor: pointer;
-        }
-  
-        input[type="submit"] {
-          background-color: #28a745;
-          color: white;
-        }
-  
-        input[type="reset"] {
-          background-color: #dc3545;
-          color: white;
-        }
-  
-        fieldset {
-          border: 2px solid #ccc;
-          border-radius: 5px;
-          padding: 10px;
-        }
-  
-        legend {
-          font-weight: bold;
-        }
-  
-        .radio-checkbox-group {
-          display: flex;
-          flex-wrap: wrap;
-        }
-  
-        .radio-checkbox-group label {
-          margin-right: 10px;
-        }
-      </style>
-  </head>
-  <body>
-    <div class="container">
-      <header>
-        <img src="./images/DeveloperAvatar.png" alt="" width="100" />
-        PERSONEL TANIMA FORMU
-      </header>
-      <br />
-      <section>
-        <form action="./result.html">
-          <div>
-            <label for="ad">Adınız:</label>
-            <input
-              type="text"
-              id="ad"
-              name="Ad"
-              required
-              placeholder="Adınız"
-            />
-          </div>
 
-          <div>
-            <label for="soyad">Soyad</label>
-            <input type="text" id="soyad" name="Soyad" />
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PERSONEL TANIMA FORMU</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-          <div>
-            <label for="email">E-mail:</label>
-            <!-- required(gerekli) attribute ile kullanıcının bu alana giriş yapmasını zorunlu hale getiririr -->
-            <input type="email" name="E-mail" id="email" />
-          </div>
+    .container {
+      background-color: white;
+      width: 50%;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
 
-          <div>
-            <label for="sifre">Şifre</label>
-            <input type="password" name="Sifre" id="sifre" />
-          </div>
+    header {
+      display: flex;
+      align-items: center;
+      background-color: orange;
+      padding: 10px;
+      border-radius: 10px 10px 0 0;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+      font-size: 1.5em;
+    }
 
-          <div>
-            <label for="tel">Telefon</label>
-            <input
-              type="tel"
-              name="Telefon"
-              id="tel"
-              pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-              placeholder="xxx-xxx-xx-xx"
-            />
-          </div>
+    header img {
+      margin-right: 15px;
+      border-radius: 10px;
+    }
 
-          <div>
-            <label for="yas">Yaş</label>
-            <input type="number" name="Yas" id="yas" min="16" max="50" />
-          </div>
-          <div>
-            <label for="dtarih">Doğum Tarihi:</label>
-            <input
-              type="date"
-              name="Dogum_tarihi"
-              id="dtarih"
-              min="1974-01-02"
-              max="2008-01-01"
-            />
-          </div>
+    section {
+      margin-top: 20px;
+    }
 
-          <div>
-            <!-- Radio tek bir seçenek secilmesine olanak tanır.Ama nameler aynı olmalı -->
-            <label for="Cinsiyet">Cinsiyet:</label>
-            <!-- ----------------------------------------------------------------------- -->
-            <input type="radio" name="cinsiyet" id="kadın" value="Kadın" />
-            <label for="kadın">Kadın</label>
-            <!-- ----------------------------------------------------------------------- -->
-            <input type="radio" name="cinsiyet" id="erkek" value="Erkek" />
-            <label for="erkek">Erkek</label>
-          </div>
+    section div {
+      margin-bottom: 15px;
+    }
 
-          <div>
-            <label for="gunler">Müsait Olduğunuz Günler</label>
-            <!-- ----------------------------------------------------------------------- -->
-            <input type="checkbox" name="Gunler" id="cumartesi" value="cumartesi" />
-            <label for="cumartesi">Cumartesi</label>
-            <input type="checkbox" name="Gunler" id="pazar" value="pazar" /> 
-            <label for="pazar">Pazar</label>
-          </div>
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
 
-          <div>
-            <label for="renk">Sevdiğiniz Renk:</label>
-            <input type="color" name="Renk" id="renk">
-          </div>
-          <div>
-            <label for="foto">Fotograf Yükleyin:</label>
-            <input type="file" name="Fotograf" id="foto">
-          </div>
-          <div>
-            <label for="maas">Maaş:</label>
-            <input type="range" name="Maaş" id="" min="10000" max="100000">
-          </div>
+    input[type="text"],
+    input[type="password"],
+    input[type="number"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    input[type="file"],
+    select,
+    textarea {
+      width: 90%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .buttons input {
+      width: 48%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+
+    input[type="submit"] {
+      background-color: #28a745;
+      color: white;
+    }
+
+    input[type="reset"] {
+      background-color: #dc3545;
+      color: white;
+    }
+
+    fieldset {
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+    }
+
+    legend {
+      font-weight: bold;
+    }
+
+    .radio-checkbox-group {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .radio-checkbox-group label {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <img src="./images/DeveloperAvatar.png" alt="" width="100" />
+      PERSONEL TANIMA FORMU
+    </header>
+    <br />
+    <section>
+      <form action="./result.html">
+        <div>
+          <label for="ad">Adınız:</label>
+          <input type="text" id="ad" name="Ad" required placeholder="Adınız" />
+        </div>
+
+        <div>
+          <label for="soyad">Soyad</label>
+          <input type="text" id="soyad" name="Soyad" />
+        </div>
+
+        <div>
+          <label for="email">E-mail:</label>
+          <!-- required(gerekli) attribute ile kullanıcının bu alana giriş yapmasını zorunlu hale getiririr -->
+          <input type="email" name="E-mail" id="email" />
+        </div>
+
+        <div>
+          <label for="sifre">Şifre</label>
+          <input type="password" name="Sifre" id="sifre" />
+        </div>
+
+        <div>
+          <label for="tel">Telefon</label>
+          <input type="tel" name="Telefon" id="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+            placeholder="xxx-xxx-xx-xx" />
+        </div>
+
+        <div>
+          <label for="yas">Yaş</label>
+          <input type="number" name="Yas" id="yas" min="16" max="50" />
+        </div>
+        <div>
+          <label for="dtarih">Doğum Tarihi:</label>
+          <input type="date" name="Dogum_tarihi" id="dtarih" min="1974-01-02" max="2008-01-01" />
+        </div>
+
+        <div>
+          <!-- Radio tek bir seçenek secilmesine olanak tanır.Ama nameler aynı olmalı -->
+          <label for="Cinsiyet">Cinsiyet:</label>
+          <!-- ----------------------------------------------------------------------- -->
+          <input type="radio" name="cinsiyet" id="kadın" value="Kadın" />
+          <label for="kadın">Kadın</label>
+          <!-- ----------------------------------------------------------------------- -->
+          <input type="radio" name="cinsiyet" id="erkek" value="Erkek" />
+          <label for="erkek">Erkek</label>
+        </div>
+
+        <div>
+          <label for="gunler">Müsait Olduğunuz Günler</label>
+          <!-- ----------------------------------------------------------------------- -->
+          <input type="checkbox" name="Gunler" id="cumartesi" value="cumartesi" />
+          <label for="cumartesi">Cumartesi</label>
+          <input type="checkbox" name="Gunler" id="pazar" value="pazar" />
+          <label for="pazar">Pazar</label>
+        </div>
+
+        <div>
+          <label for="renk">Sevdiğiniz Renk:</label>
+          <input type="color" name="Renk" id="renk">
+        </div>
+        <div>
+          <label for="foto">Fotograf Yükleyin:</label>
+          <input type="file" name="Fotograf" id="foto">
+        </div>
+        <div>
+          <label for="maas">Maaş:</label>
+          <input type="range" name="Maaş" id="" min="10000" max="100000">
+        </div>
 
 
+        <!-------->
+        <!----SELECT---->
+        <label for="tatli">Sevdiğiniz Tatlılar</label>
+        <select name="sevilen-tatli" id="tatli">
+          <optgroup label="sütlü-tatlilar">
+            <option value="Tiramisu">Tiramisu</option>
+            <option value="San">San Sebastian</option>
+            <option value="Tirileçe" selected>Tirileçe</option>
+          </optgroup>
+          <optgroup label="serbetli-tatlilar">
+            <option value="halka">Halka Tatli</option>
+            <option value="pare">Şeker Pare</option>
+            <option value="kadayif">Kadayif Dolmasi</option>
+            <option value="baklava">Baklava</option>
+            <option value="kunefe">Künefe</option>
+          </optgroup>
+        </select>
 
 
-          <input type="submit" value="KAYDET" />
-        </form>
-      </section>
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-    </div>
-  </body>
+
+        <input type="submit" value="KAYDET" />
+      </form>
+    </section>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  </div>
+</body>
+
 </html>
