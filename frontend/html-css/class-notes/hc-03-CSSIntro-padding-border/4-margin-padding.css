@@ -27,3 +27,9 @@
     height: 100px;
     background-color: aqua;
 }
+
+.money2 {
+    background-color: brown;
+    padding: 10px;
+    border: 10px ridge yellow;
+}
