@@ -1,67 +1,59 @@
 * {
-    background-color: chocolate;
+    background-color: tomato;
 }
 
 .container {
-    display: flex;
-
-
-
-
-    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    width: 50%;
 
 }
 
 .box {
     width: 100px;
     height: 100px;
-
     margin: 5px;
+    border-radius: 6px;
+    border-width: 2px;
+    border-color: white;
+}
 
-    justify-content: center;
+p {
+    margin: 32px;
 }
 
 .box1 {
     border: none;
-
 }
 
 .box2 {
-    border: 2px dotted black;
-
+    border-style: dotted;
 }
 
 .box3 {
-    border: 2px dashed black;
-
+    border-style: dashed;
 }
 
 .box4 {
-    border: 2px solid black;
-
+    border-style: solid;
 }
 
 .box5 {
-    border: 2px double black;
-
+    border: double
 }
 
 .box6 {
-    border: 2px groove black;
-
+    border-style: groove;
 }
 
 .box7 {
-    border: 2px ridge black;
-
+    border-style: ridge;
 }
 
 .box8 {
-    border: 2px inset black;
-
+    border-style: inset;
 }
 
 .box9 {
-    border: 2px outset black;
-
+    border-style: outset;
 }
