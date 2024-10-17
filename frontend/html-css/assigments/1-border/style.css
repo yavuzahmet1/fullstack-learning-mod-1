@@ -1,0 +1,67 @@
+* {
+    background-color: chocolate;
+}
+
+.container {
+    display: flex;
+
+
+
+
+    width: 100%;
+
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+
+    margin: 5px;
+
+    justify-content: center;
+}
+
+.box1 {
+    border: none;
+
+}
+
+.box2 {
+    border: 2px dotted black;
+
+}
+
+.box3 {
+    border: 2px dashed black;
+
+}
+
+.box4 {
+    border: 2px solid black;
+
+}
+
+.box5 {
+    border: 2px double black;
+
+}
+
+.box6 {
+    border: 2px groove black;
+
+}
+
+.box7 {
+    border: 2px ridge black;
+
+}
+
+.box8 {
+    border: 2px inset black;
+
+}
+
+.box9 {
+    border: 2px outset black;
+
+}
