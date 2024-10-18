@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Friday Workshop</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="./image/phone-call-regular-24.png" alt="call">
+            <h1>Application Form</h1>
+        </div>
+        <div class="getInfo">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name">
+            <label for="email">Email Address:</label>
+            <input type="text" id="email">
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone">
+            <label for="birth">Date of Birth:</label>
+            <input type="text" id="birth">
+            <div>
+                <label for="Cinsiyet">Gender:</label>
+                <input type="radio" name="gender" id="male" value="Male" />
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female" value="Female" />
+                <label for="female">Erkek</label>
+            </div>
+            <div class="selected-options">
+                <label for="tatli" class="country-label">Country:</label>
+                <select name="countries" id="countries">
+                    <optgroup label="">
+                        <option value="" selected>Select Your Country</option>
+                        <option value="USA">USA</option>
+                        <option value="France">France</option>
+                        <option value="Germany">Germany</option>
+                    </optgroup>
+                </select>
+
+            </div>
+
+            <fieldset>
+                <legend>Skills and Experiences</legend>
+                <input type="checkbox" value="Coding" id="coding">
+                <label for="coding">Coding</label>
+                <input type="checkbox" value="Desing" id="desing">
+                <label for="desing">Design</label>
+                <input type="checkbox" value="Marketing" id="marketing">
+                <label for="marketing">Marketing</label>
+                <textarea name="brief" id="experienceText">Describe your experience...</textarea>
+            </fieldset>
+            <input type="submit" value="Submit Application" />
+        </div>
+    </div>
+</body>
+
+</html>
