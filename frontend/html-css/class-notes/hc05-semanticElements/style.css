@@ -1,6 +1,12 @@
 * {
     margin: 0;
     padding: 0s;
+    text-decoration: none;
+}
+
+body {
+    background-color: #011B36;
+    color: white;
 }
 
 header {
@@ -11,4 +17,47 @@ header {
     background-position: center;
     color: white;
     font-size: 2rem;
+    text-align: center;
+}
+
+nav {
+    background-color: #011B36;
+    padding: 2rem;
+    text-align: center;
+}
+
+a {
+
+    font-size: 2rem;
+    padding: 2rem;
+
+}
+
+a:hover {
+    color: burlywood;
+    font-size: 2rem;
+}
+
+a:active {
+    color: aqua;
+    font-size: 2rem;
+}
+
+section {
+    background-color: aliceblue;
+    color: #011B36;
+    width: 90%;
+    padding: 2rem;
+    font-size: 1.5rem;
+    margin: 2rem;
+    border-radius: 0.5rem;
+    border-top-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    box-shadow: 2px 2px 5px wheat, 10px 10px 0 red;
+    line-height: 1.5;
+}
+
+ul {
+    list-style-position: outside;
+
 }
