@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0s;
+}
+
+header {
+    background-image: url(https://cromsalvatera.com.au/wp-content/uploads/2024/02/Music-Marketing-Digital.jpg);
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-size: 2rem;
+}
