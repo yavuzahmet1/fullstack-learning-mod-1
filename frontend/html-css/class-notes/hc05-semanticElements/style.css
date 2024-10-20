@@ -15,30 +15,32 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    color: white;
+    color: navy;
     font-size: 2rem;
     text-align: center;
+    align-content: center;
+    text-shadow: 2px 2px wheat;
 }
 
 nav {
     background-color: #011B36;
     padding: 2rem;
     text-align: center;
-}
-
-a {
-
-    font-size: 2rem;
-    padding: 2rem;
 
 }
 
-a:hover {
+nav a {
+    color: bisque;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+nav a:hover {
     color: burlywood;
     font-size: 2rem;
 }
 
-a:active {
+nav a:active {
     color: aqua;
     font-size: 2rem;
 }
@@ -57,7 +59,62 @@ section {
     line-height: 1.5;
 }
 
-ul {
-    list-style-position: outside;
+.contents ul {
+    list-style-position: inside;
+    list-style-type: none;
+    list-style-image: url(./images/music-solid-24.png);
 
+}
+
+.contents li:first-child {
+    color: red;
+}
+
+.contents li:last-child {
+    color: aqua;
+}
+
+.contents li:nth-child(even) {
+    color: blue;
+    /*çift sayıların rengini değiştirdik */
+}
+
+.contents li:nth-child(odd) {
+    color: #FFB30D;
+    /*tek sayıların rengini değiştirdik */
+}
+
+.genre li::before {
+    content: "💤";
+    font-size: 2rem;
+    border: 1px solid gray;
+}
+
+.genre li::after {
+    content: "🎶";
+}
+
+.social a {
+    color: wheat;
+    padding: 0.5rem;
+}
+
+footer {
+    background-color: #FFB30D;
+    padding: 2rem;
+    text-align: center;
+    color: black;
+}
+
+.copy-right {
+    margin: 1rem;
+}
+
+.music-content::first-letter {
+    font-size: 3rem;
+    color: red;
+}
+
+.music-content::first-line {
+    color: cornflowerblue;
 }
