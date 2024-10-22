@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body {
+    background-image: url(./images/background_image.jpg);
+    text-align: center;
+}
+
+span {
+    color: red;
+}
+
+.container {
+    padding: 30px;
+    margin: auto;
+    min-width: 350px;
+
+}
+
+form {
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: start;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="submit"],
+input[type="email"],
+select {
+    padding: 5px;
+    width: 90%;
+    margin-top: 5px;
+
+}
+
+input[type="submit"] {
+    padding: 10px;
+    background-color: red;
+    border-radius: 30px;
+    width: 120px;
+}
+
+.box {
+    padding: 10px;
+}
+
+main {
+    align-content: center;
+}
+
+input[type="submit"] {
+    margin-left: 40%;
+}
