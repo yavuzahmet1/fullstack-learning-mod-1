@@ -79,3 +79,7 @@ console.log(now.getTime())
 console.log(now.getHours())
 console.log(now.getMinutes())
 console.log(`Hour ${now.getHours()}:${now.getMinutes()} `)
+function example() {
+    let sum = 65 + 32;
+}
+console.log(example());
