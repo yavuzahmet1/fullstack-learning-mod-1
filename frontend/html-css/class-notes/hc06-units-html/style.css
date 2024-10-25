@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.abs {
+    background-color: cadetblue;
+    width: 10px;
+    width: 7cm;
+}
+
+.div2 {
+    background-color: blanchedalmond;
+    width: 50%;
+}
+
+.div3 {
+    background-color: cadetblue;
+    width: 50%;
+    height: 100%;
+}
+
+.div4 {
+    background-color: chocolate;
+    width: 50vw;
+
+}
+
+.div5 {}
+
+.div6 {}
+
+.div7 {}
+
+.div8 {}
+
+.div9 {}
+
+.div10 {}
