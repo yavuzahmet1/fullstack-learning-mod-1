@@ -1,0 +1,56 @@
+h1 {
+    background-color: aqua;
+}
+
+a {
+    background-color: blueviolet;
+    color: aliceblue;
+    width: 100px;
+    height: 100px;
+    padding: 50px;
+    /*hacim büyür ama aşağı ve yukarıdaki elemtlere bir etkisi olmaz sadece sağ ve sol elementleri öteler */
+    display: inline-block;
+    /* aşağı ve yukarıyı ötelemek için inline-block veya block özelliği verilebilir*/
+
+}
+
+label {
+    background-color: burlywood;
+    /* margin: 50px; */
+    /*sağdan soldan uzaklasır fakat top ve bottom değerleri değişmez */
+
+}
+
+span {
+    background-color: chartreuse;
+}
+
+.box {
+    background-color: teal;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+.example {
+    border: 5px solid blue;
+    background-color: chocolate;
+    width: 300px;
+    margin: auto;
+}
+
+p {
+    background-color: cadetblue;
+    text-align: center;
+}
+
+b {
+    /* b elementi inline bir element bu nedenle margin:auto özelliğini kullanabilmek için öncelike bununun display özelliğini blok yaparız bu da yetti mi hayır width: ; özelliğini de ayarlamamız lazım çünkü ortalayabilmek için bunları yapmamız lazım */
+    background-color: aqua;
+    border: 2px solid brown;
+    display: block;
+    width: 300px;
+    margin: 10px auto;
+    text-align: center;
+    /*içindeki yazıyı ortalar*/
+}
