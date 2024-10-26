@@ -1,0 +1,67 @@
+main {
+    background-color: aquamarine;
+    width: 90%;
+    margin: 50px auto;
+    position: relative;
+    /* z-index: 0; */
+}
+
+.staticBox {
+    background-color: blue;
+    color: aliceblue;
+    width: 100px;
+    height: 100px;
+}
+
+.relativeBox {
+    background-color: bisque;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 10px;
+    left: 20px;
+    /* z-index: 1; */
+}
+
+.fixedBox {
+    background-color: blueviolet;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    bottom: 50px;
+
+}
+
+.absoluteBox {
+    background-color: brown;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    /* relative göre pozisyon alır */
+    top: 0;
+    right: 0;
+}
+
+.stickyBox {
+    background-color: cadetblue;
+    width: 100px;
+    height: 100px;
+}
+
+.inside {
+    background-color: darkgreen;
+    width: 50px;
+    height: 50px;
+    color: aliceblue;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.paragraph2 {
+    background-color: olive;
+    border-radius: 50px;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+}
