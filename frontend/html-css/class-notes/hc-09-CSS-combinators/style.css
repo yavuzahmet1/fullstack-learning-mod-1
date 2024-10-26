@@ -1,0 +1,31 @@
+div p {
+    /* background-color: olive; */
+}
+
+.container div p {
+    /* background-color: aqua; */
+}
+
+p+div {
+    /*! p'den hemen sonra gelen div*/
+    /* background-color: red; */
+}
+
+div+p {
+    /*! div'den hemen sonra gelen p*/
+    /* background-color: blueviolet; */
+}
+
+div~p {
+    /*! div'den hemen sonra gelen tüm p'ler*/
+    /* background-color: cadetblue; */
+}
+
+div>p {
+    /*! parenti div olan element*/
+    background-color: chocolate;
+}
+
+a[target="_blank"] {
+    background-color: aquamarine;
+}
