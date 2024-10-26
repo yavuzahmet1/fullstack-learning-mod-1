@@ -29,3 +29,35 @@ div>p {
 a[target="_blank"] {
     background-color: aquamarine;
 }
+
+.out {
+    border: 2px solid red;
+    width: 10rem;
+    height: 10rem;
+    margin: 50px auto;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 60px;
+    box-sizing: border-box;
+    /* justify-content: center;
+    align-items: center;
+    display: flex; */
+
+}
+
+.out:hover {
+    outline: 5px dashed darkblue;
+    outline-offset: .5rem;
+}
+
+.cw {
+    border: 2px solid red;
+    width: 20rem;
+    margin: 50px auto;
+    text-align: center;
+    outline: 15px solid purple;
+    outline-offset: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    background-color: orange;
+}
