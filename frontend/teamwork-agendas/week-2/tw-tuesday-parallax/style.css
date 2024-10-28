@@ -1,0 +1,27 @@
+.section-1 {
+
+    background-image: url(./images/bg.jpg);
+}
+
+.section-2 {
+    background-image: url(./images/bg2.jpg);
+}
+
+.section-3 {
+    background-image: url(./images/bg3.jpg);
+}
+
+.section-4 {
+    background-image: url(./images/bg4.jpg);
+}
+
+.section-5 {
+    background-image: url(./images/bg1.jpg);
+}
+
+div {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    border: 2px solid black;
+}
