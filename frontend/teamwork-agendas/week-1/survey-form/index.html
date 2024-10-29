@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="title">NETFILIX</h1>
+        <p id="description">Thank you for signing up at Netfilix. Tell us more about your self.</p>
+        <form action="" id="survey-form">
+            <div class="box">
+                <label for="name">Name</label><br>
+                <input type="text" id="name" class="inputName" placeholder="Enter your name">
+            </div>
+            <div class="box">
+                <label for="age">Age</label><br>
+                <input type="text" id="age" class="inputAge" placeholder="Age">
+            </div>
+            <div class="box">
+                <label for="email">Email</label><br>
+                <input type="text" id="email" class="inputEmail" placeholder="Email">
+            </div>
+            <div class="box contentType">
+                <label for="contentType">Content Type</label><br>
+                <select name="content" id="contentType">
+                    <option value="series">Series</option>
+                    <option value="movie">Movie</option>
+                    <option value="documentary">Documentary</option>
+                </select>
+            </div>
+            <div class="box movieType">
+                <label for="">Movie Type</label><br>
+                <input type="checkbox"> Comedy<br>
+                <input type="checkbox"> Action<br>
+                <input type="checkbox"> Romance<br>
+            </div>
+            <div class="box gender">
+                <h5>Gender</h5>
+                <input type="radio" id="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="other">
+                <label for="other">Other</label>
+
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
