@@ -1,122 +1,122 @@
-// //! && AND || OPERATOR REINFORCEMENT DETAILS
+//! && AND || OPERATOR REINFORCEMENT DETAILS
 
-// //! 1-Determining Username
-// /*If a username is not entered in the user's profile, use the name "Guest". Specify the username using the variables below.*/
-// console.log("1-Determining Username");
+//! 1-Determining Username
+/*If a username is not entered in the user's profile, use the name "Guest". Specify the username using the variables below.*/
+console.log("1-Determining Username");
 
-// let username = "Ahmet"; //prompt("Enter your username!")
-// const resultUserName = username || "username is guest"
+let username = "Ahmet"; //prompt("Enter your username!")
+const resultUserName = username || "username is guest"
 
-// console.log(`username is ${resultUserName}`);
+console.log(`username is ${resultUserName}`);
 
-// //! 2-Show Product Price
-// // A product can have three different prices: `discountPrice`, `campaignPrice`, or `normalPrice`. If none of these prices are available, return "No price".
-// console.log("2-Show Product Price");
+//! 2-Show Product Price
+// A product can have three different prices: `discountPrice`, `campaignPrice`, or `normalPrice`. If none of these prices are available, return "No price".
+console.log("2-Show Product Price");
 
-// let discountPrice = "", campaignPrice = null, normalPrice = 0;
-// const priceResult = discountPrice || campaignPrice || normalPrice || "No price"
+let discountPrice = "", campaignPrice = null, normalPrice = 0;
+const priceResult = discountPrice || campaignPrice || normalPrice || "No price"
 
-// console.log(priceResult);
+console.log(priceResult);
 
-// //! 3-Determining Communication Preferences
-// // If a user does not have a phone number or email address, return a "Contact information missing" message by default.
-// console.log("3 - Determining Communication Preferencess");
+//! 3-Determining Communication Preferences
+// If a user does not have a phone number or email address, return a "Contact information missing" message by default.
+console.log("3 - Determining Communication Preferencess");
 
-// let email = ""//prompt("Enter your email.");
-// let phoneNumber = "" //prompt("Enter your telephone number.")
-// let resultInfo = Boolean(email && phoneNumber)
+let email = ""//prompt("Enter your email.");
+let phoneNumber = "" //prompt("Enter your telephone number.")
+let resultInfo = Boolean(email && phoneNumber)
 
-// if (!resultInfo) {
-//     console.log("There is an error in the information you entered.")
-// } else {
-//     console.log(`Your email is : ${email} and your phone mumber is ${phoneNumber}`);
-// }
+if (!resultInfo) {
+    console.log("There is an error in the information you entered.")
+} else {
+    console.log(`Your email is : ${email} and your phone mumber is ${phoneNumber}`);
+}
 
-// //! 4-Address Information Verification
-// // A user can have three different address information: `homeAddress`, `isAddress`, or `mailBox`. If all information is missing, return "No address".
-// console.log("4-Address Information Verification");
+//! 4-Address Information Verification
+// A user can have three different address information: `homeAddress`, `isAddress`, or `mailBox`. If all information is missing, return "No address".
+console.log("4-Address Information Verification");
 
-// let homeAddress = "" //prompt("Enter your home address");
-// let workAddress = null //prompt("Enter your home work address");
-// let mailBox = 0 //prompt("Enter your home mail box");
-// let adressInfo = homeAddress || workAddress || mailBox;
+let homeAddress = "" //prompt("Enter your home address");
+let workAddress = null //prompt("Enter your home work address");
+let mailBox = 0 //prompt("Enter your home mail box");
+let adressInfo = homeAddress || workAddress || mailBox;
 
-// if (!adressInfo) {
-//     console.log("No address information");
-// } else {
-//     console.log(`your address information : ${homeAddress}${workAddress} ${mailBox}`);
-// }
+if (!adressInfo) {
+    console.log("No address information");
+} else {
+    console.log(`your address information : ${homeAddress}${workAddress} ${mailBox}`);
+}
 
-// //! 5- Set Default Language
-// // An application has language options such as `userLanguage`, `browserLanguage`, and `defaultLanguage`. If all options are not available, return "No language selected".
-// console.log("5- Set Default Language");
+//! 5- Set Default Language
+// An application has language options such as `userLanguage`, `browserLanguage`, and `defaultLanguage`. If all options are not available, return "No language selected".
+console.log("5- Set Default Language");
 
-// let defaultLanguage = "";
-// let browserLanguage = "";
-// let userLanguage = "";
-// const selectedLanguage = defaultLanguage || browserLanguage || userLanguage || "No language selected!"
+let defaultLanguage = "";
+let browserLanguage = "";
+let userLanguage = "";
+const selectedLanguage = defaultLanguage || browserLanguage || userLanguage || "No language selected!"
 
-// console.log(selectedLanguage)
+console.log(selectedLanguage)
 
-// //! 6-Show Profile Picture
-// // A user has profile picture options such as `profilePhoto`, `defaultAvatar`, and `defaultImage`. If all of them are missing, return "No image".
-// console.log("6-Show Profile Picture");
+//! 6-Show Profile Picture
+// A user has profile picture options such as `profilePhoto`, `defaultAvatar`, and `defaultImage`. If all of them are missing, return "No image".
+console.log("6-Show Profile Picture");
 
-// let defaultAvatar = "";
-// let defaultImage = null;
-// let profilePhoto = null;
-// let resultImage = defaultAvatar || defaultImage || profilePhoto || "No image";
+let defaultAvatar = "";
+let defaultImage = null;
+let profilePhoto = null;
+let resultImage = defaultAvatar || defaultImage || profilePhoto || "No image";
 
-// console.log(resultImage);
+console.log(resultImage);
 
-// //! 7-User Information
-// // A user can have a first name, last name, and nickname. If no information is available, return "Anonymous".
-// console.log("7-User Information");
+//! 7-User Information
+// A user can have a first name, last name, and nickname. If no information is available, return "Anonymous".
+console.log("7-User Information");
 
-// const firstName = "";
-// const surName = "";
-// const username_ = "";
-// let resultInfo_ = firstName || surName || username_ || "Anonymous"
+const firstName = "";
+const surName = "";
+const username_ = "";
+let resultInfo_ = firstName || surName || username_ || "Anonymous"
 
-// console.log(resultInfo_);
+console.log(resultInfo_);
 
-// //! 8-Show Age Information
-// // A user has either `age`, `birthOfYear`, or `estimatedAge`. If no age information is provided, return "Age unknown"
-// console.log("8-Show Age Information");
+//! 8-Show Age Information
+// A user has either `age`, `birthOfYear`, or `estimatedAge`. If no age information is provided, return "Age unknown"
+console.log("8-Show Age Information");
 
-// let age = "";
-// let birthOfYear = "";
-// let estimatedAge = "";
-// const resultAge = age || birthOfYear || estimatedAge || "Age unknown"
-// console.log(resultAge)
+let age = "";
+let birthOfYear = "";
+let estimatedAge = "";
+const resultAge = age || birthOfYear || estimatedAge || "Age unknown"
+console.log(resultAge)
 
-// //! 9-Game Score Determination
-// // A game has `mainScore`, `backupScore`, and `defaultScore` information. If all are `falsy`, return "No score".
-// console.log("9-Game Score Determination");
+//! 9-Game Score Determination
+// A game has `mainScore`, `backupScore`, and `defaultScore` information. If all are `falsy`, return "No score".
+console.log("9-Game Score Determination");
 
-// let mainScore = 0;
-// let backupScore = 0;
-// let defaultScore = 0;
+let mainScore = 0;
+let backupScore = 0;
+let defaultScore = 0;
 
-// const resultScore = mainScore || backupScore || defaultScore || `No score`;
+const resultScore = mainScore || backupScore || defaultScore || `No score`;
 
-// console.log(resultScore);
+console.log(resultScore);
 
 
-// //! 10-Online Status Check
-// // A user can have an online status such as `activeStatus`, `lastLogin`, or `waitStatus`. If all of them are `falsy`, return "Offline"
-// console.log("10-Online Status Check");
-// let activeStatus = false;
-// let lastLogin = false;
-// let waitStatus = false;
+//! 10-Online Status Check
+// A user can have an online status such as `activeStatus`, `lastLogin`, or `waitStatus`. If all of them are `falsy`, return "Offline"
+console.log("10-Online Status Check");
+let activeStatus = false;
+let lastLogin = false;
+let waitStatus = false;
 
-// const resultStatus = activeStatus || lastLogin || waitStatus || `${console.log(resultFunction())} `
+const resultStatus = activeStatus || lastLogin || waitStatus || `${console.log(resultFunction())} `
 
-// function resultFunction() {
-//     console.log("All of them are falsy")
-//     return "status is offline"
-// }
-// console.log(`Status is ${resultStatus === true ? "online" : "offline"} `);
+function resultFunction() {
+    console.log("All of them are falsy")
+    return "status is offline"
+}
+console.log(`Status is ${resultStatus === true ? "online" : "offline"} `);
 
 //! 1- User Login Control
 // If a user has `userName` and `password`, allow them to log in, otherwise return a "Login information missing" message.
