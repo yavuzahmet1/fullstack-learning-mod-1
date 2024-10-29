@@ -4,7 +4,7 @@
 /*If a username is not entered in the user's profile, use the name "Guest". Specify the username using the variables below.*/
 console.log("1-Determining Username");
 
-let username = "Ahmet"; //prompt("Enter your username!")
+let usernames = "Ahmet"; //prompt("Enter your username!")
 const resultUserName = username || "username is guest"
 
 console.log(`username is ${resultUserName}`);
@@ -64,7 +64,7 @@ console.log("6-Show Profile Picture");
 
 let defaultAvatar = "";
 let defaultImage = null;
-let profilePhoto = null;
+let profilePhotoss = null;
 let resultImage = defaultAvatar || defaultImage || profilePhoto || "No image";
 
 console.log(resultImage);
