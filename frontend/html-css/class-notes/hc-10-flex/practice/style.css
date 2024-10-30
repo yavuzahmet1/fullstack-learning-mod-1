@@ -37,9 +37,9 @@ nav .middle {
     z-index: 1;
     gap: 1rem;
     flex-wrap: wrap;
+}
 
-
-    nav .right {
-        flex: 1;
-        justify-content: space-around;
-    }
+nav .right {
+    flex: 1;
+    justify-content: space-around;
+}
