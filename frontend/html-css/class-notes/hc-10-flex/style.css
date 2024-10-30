@@ -19,7 +19,7 @@ ul {
     align-items: center;
     flex-wrap: wrap;
     gap: 1rem;
-    height: 100vh;
+
 
 }
 
@@ -31,4 +31,69 @@ ul li {
     padding: 1rem;
     border-radius: 10px;
     width: 100px;
+}
+
+.container {
+    margin-top: 50px;
+    background-color: aquamarine;
+    padding: 1rem;
+    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container * {
+    background-color: orange;
+    height: 50px;
+}
+
+header {
+    width: 100%;
+}
+
+aside {
+    width: 30%;
+}
+
+main {
+    width: 30%;
+}
+
+article {
+    width: 30%;
+}
+
+footer {
+    width: 100%;
+}
+
+
+
+.shrink {
+    background-color: indigo;
+    margin-top: 50px;
+    display: flex;
+}
+
+.box {
+    width: 200px;
+    height: 100px;
+}
+
+
+.box1 {
+    background-color: orange;
+    flex-basis: 1;
+
+}
+
+.box2 {
+    background-color: crimson;
+
+}
+
+.box3 {
+    background-color: greenyellow;
+
 }
