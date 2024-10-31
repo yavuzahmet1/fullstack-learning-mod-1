@@ -24,7 +24,7 @@ Project aims to create the same of given page (home furnishing page).
 
 ## Objective
 
-Build a page that is functionally similar to this: [Home Furnishing Project](https://hellenkuttery.github.io/home-furnishing/)
+Build a page that is functionally similar to this: [Home Furnishing Project](https://yavuzahmet1.github.io/fullstack-clarusway/frontend/html-css/class-notes/hc-10-flexbox-project/)
 
 ### At the end of the project, following topics are to be covered;
 
