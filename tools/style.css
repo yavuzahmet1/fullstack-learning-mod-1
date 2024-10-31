@@ -22,7 +22,7 @@
     text-align: justify;
     padding: 10px;
     border-radius: 15px;
-    background: linear-gradient(to top, rgb(255, 45, 45) 50%, white 50px);
+    background: linear-gradient(to top, rgb(45, 160, 255) 50%, white 50px);
     background-size: 100% 200%;
     transition: all 0.8s;
 }
