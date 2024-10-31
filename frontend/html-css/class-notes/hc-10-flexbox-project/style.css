@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Judson:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #efefef;
+    font-family: "Josefin Slab", serif;
+    font-family: "Judson", serif;
+    font-family: "Bellota", system-ui;
+}
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+    border-radius: 1.5rem;
+    box-shadow: 5px 5px 10px;
+}
+
+.iconbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 50px;
+    border-bottom: 2px solid #d9d9d9;
+}
+
+.input-part {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.search-input {
+    width: 300px;
+    background-color: #d9d9d9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    height: 40px;
+    margin-left: 1rem;
+    overflow: hidden;
+}
+
+.search-input input {
+    font-size: 1rem;
+    background-color: inherit;
+    border: none;
+    padding: 0.5rem;
+}
+
+.search-input input:focus {
+    outline: none;
+}
+
+.icons {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 15px;
+    margin: 1rem;
+}
+
+.select-category select {
+    width: 188px;
+    height: 40px;
+    background-color: #d9d9d9;
+    font-family: "Bellota", system-ui;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.support {
+    text-align: right;
+    margin-left: 1rem;
+}
+
+.support-number {
+    font-size: 2rem;
+}
+
+.support-text {
+    font-size: 1rem;
+}
+
+/*! NAVBAR*/
+
+.navbar {
+    display: flex;
+    padding: 10px 50px;
+    gap: 2rem;
+    align-items: center;
+}
+
+.button {
+    border: 2px solid red;
+    background-color: #d9d9d9;
+    display: flex;
+    align-items: center;
+    width: 310px;
+    height: 30px;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    font-style: italic;
+}
+
+.nav {
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+}
