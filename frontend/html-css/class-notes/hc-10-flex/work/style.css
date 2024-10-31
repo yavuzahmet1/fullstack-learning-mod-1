@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contaniner {
+    background-color: burlywood;
+    width: 70%;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+
+}
+
+.box {
+    background-color: tomato;
+    width: 100px;
+    height: 300px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    font-size: small;
+
+
+}
+
+/* .box4 {
+    width: 50px;
+    height: 80px;
+}
+
+.box2 {
+    width: 50px;
+    height: 90px;
+} */
