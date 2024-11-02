@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    color: white;
+    background-image: url(./images/background_image.jpg);
+}
+
+.container {
+    margin: 1.5rem auto;
+    width: 90%;
+    height: 93vh;
+    background-color: rgba(0, 0, 0, 0.3)
+}
+
+#title {
+    font-family: "Rakkas", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#survey-form {
+    width: 20%;
+    margin: 30px auto;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.inputName,
+.inputAge,
+.inputEmail {
+    height: 30px;
+    margin-top: 5px;
+    width: 100%;
+}
+
+#contentType {
+    margin-top: 5px;
+    width: 95%;
+}
+
+.header {
+    width: 60%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.box {
+    margin-top: 5px;
+}
+
+button {
+    border-radius: 20px;
+    padding: 5px 20px;
+    color: white;
+    background-color: red;
+    display: block;
+    margin: 5px auto;
+    border: none;
+}
+
+span {
+    color: red;
+}
+
+textarea {
+
+    height: 4rem;
+    width: 90%;
+    margin-top: 5px;
+}
+
+label {
+    font-weight: 100;
+}
