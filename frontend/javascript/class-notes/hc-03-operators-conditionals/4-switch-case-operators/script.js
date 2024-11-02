@@ -22,6 +22,28 @@ switch (product) {
     default:
         price = "No price";
         break;
-
 }
 console.log(price);
+
+console.clear()
+//example
+let salary = 1000;
+
+let seniority = "senior";
+let promotion;
+
+switch (seniority) {
+    case "prof":
+        promotion = `${salary + 1000}$`;
+        break;
+    case "senior":
+        promotion = `${salary + 700}$`;
+        break;
+    case "junior":
+        promotion = `${salary + 300}$`;
+        break;
+    default:
+        promotion = `${salary + 100}$`;
+        break;
+}
+console.log(promotion);
