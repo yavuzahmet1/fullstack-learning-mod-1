@@ -1,0 +1,59 @@
+* {
+    background-color: tomato;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    width: 50%;
+
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    border-radius: 6px;
+    border-width: 2px;
+    border-color: white;
+}
+
+p {
+    margin: 32px;
+}
+
+.box1 {
+    border: none;
+}
+
+.box2 {
+    border-style: dotted;
+}
+
+.box3 {
+    border-style: dashed;
+}
+
+.box4 {
+    border-style: solid;
+}
+
+.box5 {
+    border: double
+}
+
+.box6 {
+    border-style: groove;
+}
+
+.box7 {
+    border-style: ridge;
+}
+
+.box8 {
+    border-style: inset;
+}
+
+.box9 {
+    border-style: outset;
+}
