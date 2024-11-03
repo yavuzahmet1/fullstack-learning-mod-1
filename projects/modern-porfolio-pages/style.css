@@ -112,6 +112,7 @@ section {
     margin-bottom: 2rem;
     font-family: "IBM Plex Mono", monospace;
     font-size: 1rem;
+    text-align: justify;
 
 }
 
@@ -185,8 +186,160 @@ section {
     font-family: "IBM Plex Mono", monospace;
     font-size: 1rem;
     margin: 3rem 0;
+    text-align: justify;
 }
 
 span {
     color: var(--main-color);
+}
+
+/* //!SKILLS// */
+span {
+    color: var(--main-color);
+}
+
+.skills {
+    padding-top: 7rem;
+    padding-bottom: 6rem;
+}
+
+
+
+.skills .heading {
+    margin-bottom: 4rem;
+
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+}
+
+.skills-box {
+    width: 20%;
+    flex: 1 1 20rem;
+    /*Syntax: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ] */
+    /* flex-grow=>bir öğenin kendi boyutunu flex içerisinde genişleyip genişlemeyeceğini belirtir yani büyüsün mü?*/
+    /* flex-shirink=>daraldığı zaman küçülmesine müsade et 0 verirseniz hiç küçülme yapmaz 
+    flex-basis=>başlangıçta flex kaçtan başlayacak */
+    background-color: var(--second-bg-color);
+    border-radius: 2rem;
+    text-align: center;
+    border: 2px solid var(--bg-color);
+    padding: 1rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.skills-box:hover {
+    border-color: var(--main-color);
+    transform: scale(1.02);
+    box-shadow: 0 0 2rem var(--main-color);
+}
+
+.skills-box i {
+    font-size: 5rem;
+    color: var(--main-color);
+}
+
+.skills-box h3 {
+    font-size: 2rem;
+}
+
+.skills-box p {
+    font-size: 1rem;
+    margin: 1rem;
+    text-align: justify;
+}
+
+/* //!PROJECTS// */
+.project {
+    padding: 3rem;
+    background-color: var(--second-bg-color);
+
+}
+
+.project h2 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    margin-bottom: 2rem;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.project-box {
+    flex: 1 1 20rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.project-box img {
+    width: 100%;
+
+}
+
+.pro {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transform: translateY(100%);
+    text-align: center;
+}
+
+.pro a {
+    font-size: 2rem;
+    font-family: "Orbitron", sans-serif;
+    color: var(--main-color);
+}
+
+.project-box:hover .pro {
+    transform: translateY(0);
+    transition: all 1s;
+}
+
+/* position absolute=>eğer dışarıda bir conteinerim varsa */
+
+/* //!FOOTER// */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem;
+    padding: 0.2rem 10%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer p {
+    font-size: 1rem;
+}
+
+.footer-icon-top a {
+    background-color: var(--main-color);
+    padding: 0.7rem;
+    border-radius: 0.7rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-icon-top a i {
+    font-size: 2.5rem;
+    color: var(--second-bg-color);
+
+}
+
+.footer-icon-top a:hover {
+    border-color: var(--main-color);
+    transform: scale(1.02);
+    box-shadow: 0 0 3rem var(--main-color);
 }

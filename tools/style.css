@@ -1,41 +1,345 @@
-#services {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-}
-
-.row {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: "Comfortaa", sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+
 }
 
-.box {
+/* font-family: "Victor Mono", monospace;
+
+font-family: "IBM Plex Mono", monospace;
+ */
+:root {
+    --bg-color: #212a34;
+    --second-bg-color: #353f4e;
+    --text-color: #fff;
+    --main-color: #d80404;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+body a {
+    color: var(--text-color);
+}
+
+/* //!HEADER// */
+.header {
     display: flex;
-    flex-direction: column;
-    width: 350px;
-    height: 450px;
-    border: 1px solid black;
-    margin: 10px;
+    justify-content: space-between;
+    padding: 2rem 5rem;
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-color: var(--bg-color);
+}
+
+.logo {
+    font-size: 2rem;
+    color: var(--main-color);
+    font-weight: 600;
+    font-family: "Orbitron", sans-serif;
+}
+
+.navbar {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+.navbar a:hover,
+.navbar a:active {
+    color: var(--main-color);
+}
+
+/* //!HOME// */
+
+section {
+    min-height: 100vh;
+    padding: 0 10rem;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
     align-items: center;
+    gap: 5rem;
+}
+
+.home-content {
+    width: 70%;
+}
+
+.home-img {
+    width: 30%;
+}
+
+.home-img img {
+    width: 100%;
+    max-width: 20rem;
+    border-radius: 10%;
+}
+
+.home-content h3 {
+    font-size: 2rem;
+    letter-spacing: 4px;
+}
+
+.home-content .title {}
+
+.home-content .name {
+    color: var(--main-color);
+    font-size: 3rem;
+    font-family: "Orbitron", sans-serif;
+    line-height: 1.3;
+}
+
+.info {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 1rem;
     text-align: justify;
-    padding: 10px;
-    border-radius: 15px;
-    background: linear-gradient(to top, rgb(45, 160, 255) 50%, white 50px);
-    background-size: 100% 200%;
-    transition: all 0.8s;
+
 }
 
-.box:hover {
-    background-position: left bottom;
-    color: white;
-    box-shadow: 0 0 20px rgb(255, 45, 45);
+.social-item {
+    display: flex;
+    gap: 2;
+    justify-content: space-evenly;
 }
 
-.box img {
-    width: 100px;
-    height: 100px;
-    background-color: white;
-    padding: 10px;
+.social-item a {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 3rem;
+    color: var(--main-color);
+    margin: 5rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.social-item a:hover {
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    box-shadow: 0 0 3rem var(--main-color);
+}
+
+.btn {
+    background: var(--main-color);
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    color: var(--second-bg-color);
+    letter-spacing: 0.rem;
+    font-weight: 600;
+}
+
+/* //!ABOUT// */
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.about-content {
+    width: 75%;
+}
+
+.about-img {
+    width: 25%;
+}
+
+.about-img img {
+    width: 100%;
+    max-width: 20rem;
+    border-radius: 10%;
+}
+
+.heading {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.about-content h3 {
+    font-size: 1.5rem;
+}
+
+.about-content p {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 1rem;
+    margin: 3rem 0;
+    text-align: justify;
+}
+
+span {
+    color: var(--main-color);
+}
+
+/* //!SKILLS// */
+span {
+    color: var(--main-color);
+}
+
+.skills {
+    padding-top: 7rem;
+    padding-bottom: 6rem;
+}
+
+
+
+.skills .heading {
+    margin-bottom: 4rem;
+
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+}
+
+.skills-box {
+    width: 20%;
+    flex: 1 1 20rem;
+    /*Syntax: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ] */
+    /* flex-grow=>bir öğenin kendi boyutunu flex içerisinde genişleyip genişlemeyeceğini belirtir yani büyüsün mü?*/
+    /* flex-shirink=>daraldığı zaman küçülmesine müsade et 0 verirseniz hiç küçülme yapmaz 
+    flex-basis=>başlangıçta flex kaçtan başlayacak */
+    background-color: var(--second-bg-color);
+    border-radius: 2rem;
+    text-align: center;
+    border: 2px solid var(--bg-color);
+    padding: 1rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.skills-box:hover {
+    border-color: var(--main-color);
+    transform: scale(1.02);
+    box-shadow: 0 0 2rem var(--main-color);
+}
+
+.skills-box i {
+    font-size: 5rem;
+    color: var(--main-color);
+}
+
+.skills-box h3 {
+    font-size: 2rem;
+}
+
+.skills-box p {
+    font-size: 1rem;
+    margin: 1rem;
+    text-align: justify;
+}
+
+/* //!PROJECTS// */
+.project {
+    padding: 3rem;
+    background-color: var(--second-bg-color);
+
+}
+
+.project h2 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    margin-bottom: 2rem;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.project-box {
+    flex: 1 1 20rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.project-box img {
+    width: 100%;
+
+}
+
+.pro {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transform: translateY(100%);
+    text-align: center;
+}
+
+.pro a {
+    font-size: 2rem;
+    font-family: "Orbitron", sans-serif;
+    color: var(--main-color);
+}
+
+.project-box:hover .pro {
+    transform: translateY(0);
+    transition: all 1s;
+}
+
+/* position absolute=>eğer dışarıda bir conteinerim varsa */
+
+/* //!FOOTER// */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem;
+    padding: 0.2rem 10%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer p {
+    font-size: 1rem;
+}
+
+.footer-icon-top a {
+    background-color: var(--main-color);
+    padding: 0.7rem;
+    border-radius: 0.7rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-icon-top a i {
+    font-size: 2.5rem;
+    color: var(--second-bg-color);
+
+}
+
+.footer-icon-top a:hover {
+    border-color: var(--main-color);
+    transform: scale(1.02);
+    box-shadow: 0 0 3rem var(--main-color);
 }
