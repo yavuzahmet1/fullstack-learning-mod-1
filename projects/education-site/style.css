@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: "DynaPuff", system-ui; */
+    font-family: "Open Sans", sans-serif;
+}
+
+/*! HEADER */
+header {
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+}
+
+header a img {
+
+    width: 60px;
+}
+
+header .sign-in {
+    float: right;
+    padding-top: 2rem;
+    padding-right: 0.5rem;
+}
+
+header .sign-in a {
+    color: #920101;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+header .sign-in a:hover {
+    border-bottom: 2px solid #920101;
+}
+
+/*! NAV STICKY */
+nav.sticky {
+    position: sticky;
+    top: 0;
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    padding: 2rem;
+    text-align: center;
+    z-index: 2;
+}
+
+nav.sticky a {
+    color: black;
+    text-decoration: none;
+    margin: 0.8rem;
+    font-family: "DynaPuff", system-ui;
+}
+
+nav.sticky a:hover {
+    color: #fff;
+}
+
+nav.banner {
+    position: relative;
+    line-height: 3rem;
+}
+
+nav.banner img {
+    width: 100%;
+    max-height: calc(100vh-202px)
+}
+
+nav.banner .hero {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    /* transform: translate(-50%, -50%); */
+}
+
+nav.banner .hero h2 {
+    color: #fff;
+    font-size: 3rem;
+    text-shadow: 0 3px 4px black;
+}
+
+nav.banner .hero h3 {
+    color: red;
+    font-size: 1rem;
+    text-shadow: 0 3px 4px black;
+}
+
+nav.banner .hero button {
+    padding: 0.7rem;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-weight: 700;
+    background-color: #c8969E;
+}
+
+/* //! MAIN */
+
+main {
+    padding: 2rem;
+    text-align: justify;
+}
+
+main p {
+    margin: 10px;
+}
+
+.slack {
+
+    background-color: burlywood;
+    width: 3rem;
+    height: 3rem;
+    position: fixed;
+    text-align: center;
+    bottom: 2rem;
+    right: 2rem;
+    font-size: 2rem;
+    border-radius: 50%;
+    color: #920101;
+    padding-top: 1px;
+}
+
+.slack:hover {
+    outline-offset: 3px;
+    outline: 2px solid black;
+}
+
+.slack a {
+    color: white;
+}
+
+.slack a:hover {
+    color: black;
+}
