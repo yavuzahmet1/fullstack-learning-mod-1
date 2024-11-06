@@ -19,9 +19,10 @@
 // Function declaration, function anahtar kelimesi kullanılarak yapılır
 //? Bir fonksiyonun çalışması için çağırmak gereklidir.Çağırılmadığında işleme alınmaz.Bu çağırma işlemine invoke yada call denir.
 
-function print() {
-    console.log("Hello!");
-}
-print()
+// recursive Function
+// IIFE
+// calback Function
+
 
 // Hoisting: Function declaration ile tanımlanan fonksiyonlar, JavaScript tarafından kodun en başına "yükseltilir" (hoist edilir), bu nedenle fonksiyon tanımlanmadan önce bile çağrılabilir.
+
