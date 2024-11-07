@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuggles&family=Nova+Cut&display=swap');
+
+@import './theme.css';
+
+:root {
+    --green: #b9e73b;
+    --darkGreen: #2b8045;
+    --orange: #ea9a05;
+    --darkblue: blue;
+    --lightBlue: #0e91d8;
+
+    /*Font*/
+    --fug: "fuggles", cursive;
+    --nova: "Nova Cut", system-ui;
+    /*Tema*/
+    --tema2: #08403e;
+    --tema3: #706513;
+    --tema4: #b57114;
+    --tema5: #962b09;
+}
+
+
+body {
+    background-color: var(--green);
+}
+
+h1 {
+    background-color: var(--orange);
+    font-family: var(--nova);
+}
+
+p {
+    font-size: 2rem;
+}
+
+.container {
+    border: 2px solid red;
+}
+
+.dark {
+    width: 150px;
+    height: 150px;
+    background-color: var(--darkblue);
+}
+
+.light {
+    width: 150px;
+    height: 150px;
+    background-color: var(--lightBlue);
+}
+
+@media screen and (max-width:1200px) {
+    body {
+        background-color: magenta;
+    }
+}
+
+@media screen and (max-width:768px) {
+    body {
+        background-color: green;
+    }
+}
+
+@media screen and (max-width:360px) {
+    body {
+        background-color: blue;
+    }
+}

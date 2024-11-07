@@ -89,33 +89,33 @@
 
 // console.log("İs prime number?");
 
-function isPrime(n) {
-    if (n <= 1) {
-        return false;
-    }
-    if (n === 2) {
-        return true;
-    }
-    for (let i = 2; i < n; i++) {
-        if (n % i === 0) {
-            return false;
-        }
-    }
-    return true;
-}
-console.log(isPrime(2) ? "Number is prime" : "Number is not prime");
+// function isPrime(n) {
+//     if (n <= 1) {
+//         return false;
+//     }
+//     if (n === 2) {
+//         return true;
+//     }
+//     for (let i = 2; i < n; i++) {
+//         if (n % i === 0) {
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+// console.log(isPrime(2) ? "Number is prime" : "Number is not prime");
 
 //? 2. Write a function that finds the largest and smallest numbers in an array (array none, just numbers).
 
-function arrays(a, b, c) {
-    let bigNumber = a;
-    if (b > bigNumber) {
-        bigNumber = b;
-    } if (c > bigNumber) {
-        bigNumber = c;
-    }
-    return bigNumber;
-} console.log(arrays(12, 34, 101));
+// function arrays(a, b, c) {
+//     let bigNumber = a;
+//     if (b > bigNumber) {
+//         bigNumber = b;
+//     } if (c > bigNumber) {
+//         bigNumber = c;
+//     }
+//     return bigNumber;
+// } console.log(arrays(12, 34, 101));
 
 //? 3. A tool that checks whether a word entered by the user is a palindrome. Write a function.
 

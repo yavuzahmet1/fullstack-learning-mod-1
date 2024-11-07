@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Prosto+One&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,500;1,900&family=Sevillana&family=Yeon+Sung&display=swap");
+
+:root {
+    /*? Mavinin tonlari */
+    --blue-1: hsl(205, 100%, 30%);
+    --blue-2: hsl(205, 100%, 40%);
+    --blue-3: hsl(205, 100%, 50%);
+    --blue-4: hsl(205, 100%, 60%);
+    --blue-5: hsl(205, 100%, 70%);
+
+    /*? Daha acik mavi tonlari */
+    --blue-light-1: hsl(205, 89%, 70%);
+    --blue-light-2: hsl(205, 90%, 76%);
+    --blue-light-3: hsl(205, 86%, 81%);
+    --blue-light-4: hsl(205, 90%, 88%);
+    --blue-light-5: hsl(205, 100%, 96%);
+
+    /*? Grimin koyu tonlari */
+    --grey-1: hsl(209, 61%, 16%);
+    --grey-2: hsl(211, 39%, 23%);
+    --grey-3: hsl(209, 34%, 30%);
+    --grey-4: hsl(209, 28%, 39%);
+
+    /*? Grinin acik tonlari */
+    --grey-5: hsl(210, 22%, 49%);
+    --grey-6: hsl(209, 23%, 60%);
+    --grey-7: hsl(211, 27%, 70%);
+    --grey-8: hsl(210, 31%, 80%);
+    --grey-9: hsl(212, 33%, 89%);
+    --grey-10: hsl(210, 36%, 96%);
+
+    /*? Diger renkler */
+    --purple: hsl(276, 85%, 49%);
+    --white: #fff;
+    --red-dark: #a62440;
+    --red-light: hsl(360, 67%, 66%);
+    --black: #222;
+
+    --green-dark: hsl(168, 66%, 22%);
+    --green: hsl(115, 34%, 37%);
+    --green-light: hsl(75, 51%, 60%);
+    --yellow: hsl(52, 100%, 68%);
+    --orange: hsl(11, 100%, 59%);
+    --orange-light: hsl(11, 100%, 67%);
+    --orange-dark: hsl(11, 100%, 50%);
+
+    /*? Font-families */
+    --ff-roboto: "Roboto", sans-serif;
+    --ff-prosto: "Prosto One", cursive;
+    --ff-pt: "PT Sans Narrow", sans-serif;
+    --ff-sevillana: "Sevillana", cursive;
+    --ff-yeon: "Yeon Sung", cursive;
+
+    /*? Font Size */
+    --fs-3xl: 4rem;
+    --fs-2xl: 2rem;
+    --fs-xl: 1.8rem;
+    --fs-lg: 1.4rem;
+    --fs-md: 1rem;
+    --fs-sm: 0.8rem;
+    --fs-xs: 0.6rem;
+
+    /*? Line Height */
+    --line-h-xl: 2;
+    --line-h-lg: 1.5;
+
+    /*? Shadows */
+    --shadow-dark: 0 0 10px rgba(0, 0, 0, 0.4);
+    --shadow-light: 0 0 10px rgba(0, 0, 0, 0.15);
+}
