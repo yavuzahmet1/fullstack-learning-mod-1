@@ -1,27 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Fuggles&family=Nova+Cut&display=swap');
-
 @import './theme.css';
 
 :root {
     --green: #b9e73b;
-    --darkGreen: #2b8045;
+    --darkgreen: #2b8045;
     --orange: #ea9a05;
-    --darkblue: blue;
-    --lightBlue: #0e91d8;
+    --darkblue: #1111f9;
+    --lightblue: #0e91d8;
 
-    /*Font*/
-    --fug: "fuggles", cursive;
+    /*Fonts*/
+    --fug: "Fuggles", cursive;
     --nova: "Nova Cut", system-ui;
+
+    /*Font Size*/
+    --fontsize: 1.5rem;
+
     /*Tema*/
+    --tema1: #520120;
     --tema2: #08403e;
     --tema3: #706513;
     --tema4: #b57114;
     --tema5: #962b09;
 }
 
-
 body {
-    background-color: var(--green);
+    background-color: var(--grey-4);
 }
 
 h1 {
@@ -30,39 +33,38 @@ h1 {
 }
 
 p {
-    font-size: 2rem;
+    font-family: var(--nova);
+    background-color: var(--lightblue);
+    color: var(--darkblue);
+    font-size: var(--fontsize)
 }
 
 .container {
     border: 2px solid red;
+    width: 500px;
+    height: 300px;
 }
 
 .dark {
+    background-color: var(--lightblue);
     width: 150px;
     height: 150px;
-    background-color: var(--darkblue);
 }
 
 .light {
+    background-color: var(--darkblue);
     width: 150px;
     height: 150px;
-    background-color: var(--lightBlue);
-}
-
-@media screen and (max-width:1200px) {
-    body {
-        background-color: magenta;
-    }
 }
 
 @media screen and (max-width:768px) {
     body {
-        background-color: green;
+        background-color: var(--green)
     }
 }
 
 @media screen and (max-width:360px) {
     body {
-        background-color: blue;
+        background-color: var(--darkblue)
     }
 }
