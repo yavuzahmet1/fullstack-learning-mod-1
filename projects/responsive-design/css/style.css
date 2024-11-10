@@ -1,0 +1,144 @@
+@import './theme.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--ff-yeon);
+}
+
+p {
+    font-size: 1rem;
+    font-family: var(--ff-roboto);
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+nav img {
+    width: 200px;
+}
+
+button {
+    padding: 1rem;
+    white-space: nowrap;
+    font-family: var(--ff-yeon);
+    margin: 1rem 0.5rem;
+    font-size: var(--fs-lg);
+    box-shadow: var(--shadow-light);
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.btn-dark {
+    background-color: var(--red-dark);
+    color: var(--white);
+}
+
+.btn-light {
+    background-color: var(--white);
+}
+
+header.hero {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    text-align: justify;
+}
+
+header.hero h1,
+p {
+    line-height: var(--line-h-xl);
+}
+
+.section-text {
+    flex: 2;
+}
+
+.section-img {
+    flex: 1;
+}
+
+.section-img img {
+    width: 100%;
+    min-width: 300px;
+}
+
+main .card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    box-shadow: var(--shadow-dark);
+    margin: 2rem 0;
+    border-radius: 10px;
+}
+
+main article {
+    flex: 1;
+}
+
+main .card img {
+    width: 100%;
+}
+
+main .card:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+
+@media screen and (max-width:700px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav img {
+        width: 250px;
+    }
+
+    header.hero {
+        flex-direction: column;
+    }
+
+    main .card {
+        flex-direction: column;
+    }
+
+    main .card:nth-child(even) {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .section-btn button {
+        width: 300px;
+    }
+
+    .career-btn {
+        text-align: center;
+    }
+
+    .career-btn button {
+        width: 300px;
+    }
+
+    html {
+        font-size: 8px;
+    }
+}
