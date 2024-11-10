@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 200px 500px 200px 100px;
+    grid-template-rows: 100px 400px 100px;
+}
+
+.content {
+    border: 2px solid salmon;
+    background-color: skyblue;
+}
+
+.content1 {
+    background-image: url("https://picsum.photos/id/684/600/400");
+    background-size: cover;
+}
+
+.content8 {
+    background-image: url("https://picsum.photos/id/984/600/400");
+    background-size: cover;
+}
+
+.content5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

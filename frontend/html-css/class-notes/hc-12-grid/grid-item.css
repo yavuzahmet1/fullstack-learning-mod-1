@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px 100px 100px 100px 100px;
+    height: 100vh;
+    /* gap: 1rem; */
+}
+
+.content {
+    border: 1px solid;
+    background-color: skyblue;
+}
+
+.content1 {
+    background-color: teal;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.content12 {
+    background-color: orangered;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.content2 {
+    background-image: url("https://picsum.photos/id/237/600/400");
+    background-size: cover;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.content3 {
+    background-color: rgba(255, 0, 255, 0, 0.6);
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.content4 {
+    background-color: crimson;
+    grid-column: 1/2;
+    grid-row: 2/5;
+}
+
+.content7 {
+    background-color: olive;
+    grid-column: 4/5;
+    grid-row: 2/5;
+}
+
+.content6 {
+    background-color: lime;
+    grid-area: 4/2/6/4;
+}
