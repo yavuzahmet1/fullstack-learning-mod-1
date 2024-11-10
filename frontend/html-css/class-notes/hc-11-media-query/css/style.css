@@ -1,0 +1,91 @@
+@import './theme.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: var(--blue-light-2); */
+    font-family: var(--ff-yeon);
+}
+
+.container {
+    border: 2px solid red;
+    max-width: 1200px;
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+nav img {
+    width: 200px;
+}
+
+button {
+    padding: 1rem;
+    white-space: nowrap;
+    border: 2px solid red;
+    font-family: var(--ff-yeon);
+    margin: 1rem 0.5rem;
+    font-size: var(--fs-lg);
+    box-shadow: var(--shadow-light);
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.btn-dark {
+    background-color: var(--red-dark);
+    color: var(--white);
+}
+
+.btn-light {
+    background-color: var(--white);
+}
+
+header.hero {
+    border: 4px solid blue;
+    display: flex;
+}
+
+.section-text {
+    border: 2px solid orange;
+    flex: 2;
+}
+
+.section-img {
+    border: 3px solid purple;
+    flex: 1;
+}
+
+.section-img img {
+    width: 100%;
+}
+
+
+
+@media screen and (max-width:700px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav img {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .section-btn button {
+        width: 300px;
+    }
+}
