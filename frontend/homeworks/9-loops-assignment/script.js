@@ -42,86 +42,102 @@ console.log(subWorld.toLowerCase() === wordGuess.toLowerCase() ? "Palindrom" : "
 
 //? 4-1 ile 50 arasında rastgele bir sayı tahmin etme oyunu yazın ve kullanıcı doğru tahmin edene kadar devam etsin.
 console.log("4-1 ile 50 arasında rastgele bir sayı tahmin etme oyunu yazın ve kullanıcı doğru tahmin edene kadar devam etsin.");
-// let logic = false;
-// let randomNumber = Math.floor(Math.random() * 50 + 1);
-// let count = 0;
+let logic = false;
+let randomNumber = Math.floor(Math.random() * 50 + 1);
+let counts = 0;
 
-// while (!logic) {
-//     count++;
-//     let guess = +prompt(`Enter a number ${randomNumber}`);
-//     if (guess < 1 || guess > 50 || guess != randomNumber) {
+while (!logic) {
+    counts++;
+    let guess = +prompt(`Enter a number ${randomNumber}`);
+    if (guess < 1 || guess > 50 || guess != randomNumber) {
 
-//         continue;
-//     } else {
-//         logic = true;
-//     }
-// }
+        continue;
+    } else {
+        logic = true;
+    }
+}
 
-// console.log(logic ? "You win" : "wrong number")
+console.log(logic ? "You win" : "wrong number")
 
 //? 5-Kullanıcıdan alınan sayının faktöriyelini hesaplayan bir fonksiyon yazın.
 console.log("5-Kullanıcıdan alınan sayının faktöriyelini hesaplayan bir fonksiyon yazın.");
-// let faktorial = 1;
-// let number = +prompt("Enter a number")
-// console.log(calculateFak(number))
-// function calculateFak(n) {
-//     for (let i = 1; i <= n; i++) {
-//         faktorial *= i;
-//     }
-//     return faktorial
-// }
+let faktorial = 1;
+let number = +prompt("Enter a number")
+console.log(calculateFak(number))
+function calculateFak(n) {
+    for (let i = 1; i <= n; i++) {
+        faktorial *= i;
+    }
+    return faktorial
+}
 
 //? 6-1'den N'e kadar olan sayıların toplamını ve ortalamasını hesaplayan bir program yazın.
 console.log("6-1'den N'e kadar olan sayıların toplamını ve ortalamasını hesaplayan bir program yazın.");
-// let enterNumber = +prompt("Enter a number and seen result");
-// let total = 0;
-// allTotalNumber(enterNumber)
-// function allTotalNumber(n) {
-//     for (let i = 0; i <= n; i++) {
-//         total += i;
-//     }
-//     console.log(`${n} sayısına kadar olan sayıların toplamı : ${total} ortalaması : ${total / enterNumber}`)
-// }
+let enterNumber = +prompt("Enter a number and seen result");
+let total = 0;
+allTotalNumber(enterNumber)
+function allTotalNumber(n) {
+    for (let i = 0; i <= n; i++) {
+        total += i;
+    }
+    console.log(`${n} sayısına kadar olan sayıların toplamı : ${total} ortalaması : ${total / enterNumber}`)
+}
 
 //? 7-Bir dizideki tüm elemanların toplamını ve ortalamasını hesaplayan bir fonksiyon yazın (dizi yok, sadece sayılar).
 console.log("7-Bir dizideki tüm elemanların toplamını ve ortalamasını hesaplayan bir fonksiyon yazın (dizi yok, sadece sayılar).");
 
-// function sumArray(x, y, z) {
-//     console.log(x + y + z);
-// }
-// sumArray(67, 89, 54);
+function sumArray() {
+    let total = 0;
+    let avg = 0;
+    for (let index = 0; index < arguments.length; index++) {
+        total += arguments[index]
+    }
+    avg = total / arguments.length
+    return (total, avg);
+}
+const a = sumArray(3, 6, 98, 234, 45)
+console.log(`Gönderilen dizinin toplamaı : ${a}, ortalamasaı ise ${Math.floor(a / 5)}`);
 
 //? 8-Kullanıcının girdiği bir metindeki sesli harflerin sayısını hesaplayan bir program yazın.
 console.log("8-Kullanıcının girdiği bir metindeki sesli harflerin sayısını hesaplayan bir program yazın.");
 
-// let enterString = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente, labore.";
+let enterString = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente, labore.";
 
-// let count = 0;
-// for (let i = 0; i < enterString.length - 1; i++) {
-//     switch (enterString[i]) {
-//         case "a":
-//             count++;
-//             continue;
-//         case "e":
-//             count++;
-//             continue;
-//         case "i":
-//             count++;
-//             continue;
-//         case "o":
-//             count++;
-//             continue;
-//         case "u":
-//             count++
-//             continue;
-//         default:
-//             continue;
-//     }
-// }
-// console.log(`Toplam sesli harf sayisi ${count}`);
+let count = 0;
+for (let i = 0; i < enterString.length - 1; i++) {
+    switch (enterString[i]) {
+        case "a":
+            count++;
+            continue;
+        case "e":
+            count++;
+            continue;
+        case "i":
+            count++;
+            continue;
+        case "o":
+            count++;
+            continue;
+        case "u":
+            count++
+            continue;
+        default:
+            continue;
+    }
+}
+console.log(`Toplam sesli harf sayisi ${count}`);
 
 //? 9-Fibonacci dizisini belirli bir sayıya kadar yazdıran bir program yazın.
-
-
+function fibo(number) {
+    let a = 0;
+    let b = 1;
+    let next = 0;
+    for (let i = 0; i <= number; i++) {
+        next = a + b;
+        a = b;
+        b = next;
+    }
+}
+fibo(5);
 
 //? 10-Kullanıcının girdiği bir kelimenin içindeki sesli harfleri bulup, her birinin sayısını gösteren bir program yazın.
