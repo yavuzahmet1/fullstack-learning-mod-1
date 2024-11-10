@@ -64,3 +64,15 @@
     background-color: lime;
     grid-area: 4/2/6/4;
 }
+
+.content5 {
+    background-color: rgb(10, 10, 163, 0.6);
+    grid-area: 4/3/6/5;
+    z-index: 3;
+}
+
+.content8 {
+    background-color: rgb(149, 8, 8, 0.891);
+    z-index: 4;
+    grid-area: 5/1/6/5;
+}
