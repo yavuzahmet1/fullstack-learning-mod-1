@@ -7,12 +7,15 @@
 }
 
 body {
-    /* background-color: var(--blue-light-2); */
     font-family: var(--ff-yeon);
 }
 
+p {
+    font-size: 1rem;
+    font-family: var(--ff-roboto);
+}
+
 .container {
-    border: 2px solid red;
     max-width: 1200px;
     margin: auto;
 }
@@ -32,7 +35,6 @@ nav img {
 button {
     padding: 1rem;
     white-space: nowrap;
-    border: 2px solid red;
     font-family: var(--ff-yeon);
     margin: 1rem 0.5rem;
     font-size: var(--fs-lg);
@@ -53,24 +55,51 @@ button:hover {
 }
 
 header.hero {
-    border: 4px solid blue;
     display: flex;
+    align-items: center;
+    padding: 1rem;
+    text-align: justify;
+}
+
+header.hero h1,
+p {
+    line-height: var(--line-h-xl);
 }
 
 .section-text {
-    border: 2px solid orange;
     flex: 2;
 }
 
 .section-img {
-    border: 3px solid purple;
     flex: 1;
 }
 
 .section-img img {
     width: 100%;
+    min-width: 300px;
 }
 
+main .card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    box-shadow: var(--shadow-dark);
+    margin: 2rem 0;
+    border-radius: 10px;
+}
+
+main article {
+    flex: 1;
+}
+
+main .card img {
+    width: 100%;
+}
+
+main .card:nth-child(even) {
+    flex-direction: row-reverse;
+}
 
 
 @media screen and (max-width:700px) {
@@ -82,10 +111,34 @@ header.hero {
     nav img {
         width: 250px;
     }
+
+    header.hero {
+        flex-direction: column;
+    }
+
+    main .card {
+        flex-direction: column;
+    }
+
+    main .card:nth-child(even) {
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width:400px) {
     .section-btn button {
         width: 300px;
+    }
+
+    .career-btn {
+        text-align: center;
+    }
+
+    .career-btn button {
+        width: 300px;
+    }
+
+    html {
+        font-size: 8px;
     }
 }
