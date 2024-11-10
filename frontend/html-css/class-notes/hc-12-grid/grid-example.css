@@ -1,0 +1,18 @@
+* {
+    /* margin: 0; */
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 100px) 30px;
+}
+
+.content {
+    border: 2px solid;
+}
+
+.content1 {
+    background-color: silver;
+    grid-area: 2/1/4/2;
+}
