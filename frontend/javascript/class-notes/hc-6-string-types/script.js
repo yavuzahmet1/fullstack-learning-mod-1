@@ -97,3 +97,38 @@ let sentence = "Hello cohort 18";
 
 console.log(sentence.slice(5,));
 
+//! String Searching Methods
+
+//*=>includes:Birşeyin içerip içermediğini true/false döndürür
+
+//*=>indexOf:bir grubun veya karakter grubunun kaçıncı sırada olduğunun index numarasını verir yoksa -1 verir. Büyük küçük harfe duyarlıdır. Kelimeyi bulursa ilk gördüğünün indexini döndürür.
+
+//*=>search: indexOf la benzer çalışır farkı Regexlerle kullanımından kaynaklanır.
+
+//!REGEX-Regular Expression
+
+// yazım stili/işaretleyicisir.
+
+//g : global
+//i : büyük küçük duyarsız arama
+
+let variable = "AhmetYAVUZ";
+console.log(variable.search(/h/));
+console.log(variable.search(/[A-Z]/));
+console.log(variable.search(/[a-z]/));
+console.log(variable.search(/[0-9]/));
+console.log(variable.search(/[A-Z]/));
+
+//!Srtingde değişiklik yapma
+
+//* Replace - immutable
+
+let text4 = "Hello world, who are you world"
+
+let newText = text4.replace("world", "Javascript")
+console.log(newText);
+let newText2 = text4.replaceAll("world", "Javascript")
+console.log(newText2);
+
+//*=> .trim() => baştaki ve sondaki boşlukları almak için kullanılıyor
+
