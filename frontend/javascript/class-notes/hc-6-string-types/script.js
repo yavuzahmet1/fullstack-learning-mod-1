@@ -50,3 +50,50 @@ let text1 = "Ali";
 let text2 = "Vali"
 console.log(text1);
 
+
+
+
+//! String Parçalama Metodları
+// split()
+// substring()
+// substr()
+// slice()
+
+// *=========================================================
+// *                 split() immutable
+// *=========================================================
+// Stringi belirtilen şekilde parçalara ayırır ve parçalarını bir diziye aktarır
+// str.split(seperator) 
+// saparator : ayrac
+
+let textFull = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, quo!"
+console.log(textFull.split(" "));
+console.log(textFull.split(""));
+let date = "11.11.2024";
+let newDate = date.split(".")
+console.log(newDate);
+
+// *=========================================================
+// *                 //? Join metodu
+// *=========================================================
+
+// Stringmethodu değildir
+// string haline getirerek birleştirir, istediğimiz ifadelerle stringe dönüştürür
+
+/* -------------------------------------------------------------------------- */
+/*                               //? Join metodu                              */
+/* -------------------------------------------------------------------------- */
+// String metodu değildir
+// Javascript dilinde join metodu, biz dizi elemanı string olarak birleştirir. Join metodu dizi (array) alarak bunu virgül gibi bir karakter ile ayırarak string'e dönüştürür.
+
+/* -------------------------------------------------------------------------- */
+//?                               Reverse Metodu                              */
+/* -------------------------------------------------------------------------- */
+// String metodu değildir
+// reverse methodu ile bir diziyi tersine çevirebilmekteyiz. Dizi içerisindeki ilk değeri son, Son değeri ise ilk sıraya şeklinde sıralayabilmekteyiz.
+
+
+let sentence = "Hello cohort 18";
+
+console.log(sentence.slice(5,));
+
