@@ -120,18 +120,12 @@ const resultPrime = isPrime(primeControlNum) ? "Number is prime" : "Not prime";
 console.log(resultPrime);
 
 //? 3-Finding the Inverse Of Numbers
-console.log("Finding the Inverse Of Numbers");
 
 let inverseNumber = 123;
 
 const inverse = (n) => {
-    let tempString = String(n);
-    //console.log(tempString[2]);
-    //let temp;
-    for (let i = tempString.length - 1; i <= 0; i--) {
-        console.log(i);
-        //temp += tempString[index]
-    }
+    let tempString = n.toString().split("").reverse().join("");
+    return parseInt(tempString);
 }
 
 inverse(inverseNumber);

@@ -50,6 +50,16 @@ const inverseOfNumber = (n) => {
 }
 console.log(inverseOfNumber(enterNumber).slice(3));
 
+//other short solution
+
+const inverse = (n) => {
+    let tempString = n.toString().split("").reverse().join("");
+    return parseInt(tempString);
+}
+
+inverse(enterNumber);
+
+
 //? 4-Excellent number control
 
 let excellentNumber = 6;
@@ -68,3 +78,5 @@ function isExcellentNumber(n) {
 }
 const resultExcellent = isExcellentNumber(excellentNumber) ? "Number is excellent" : "Number is not excellent";
 console.log(resultExcellent);
+
+
