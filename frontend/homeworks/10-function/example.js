@@ -79,4 +79,19 @@ function isExcellentNumber(n) {
 const resultExcellent = isExcellentNumber(excellentNumber) ? "Number is excellent" : "Number is not excellent";
 console.log(resultExcellent);
 
+//? 5-Checking the Armstrong Number
+let armstrong = 153;
+
+function isArmstrong(n) {
+    let tmp = n.toString().split("");
+    let total = 0;
+
+    for (let index = 0; index < tmp.length; index++) {
+        total += Math.pow(Number(tmp[index]), 3)
+    }
+    return total
+}
+
+const resultArmstrong = isArmstrong(armstrong) == armstrong ? "Number is Armstrong" : "Not Armstrong"
+console.log(resultArmstrong);
 
