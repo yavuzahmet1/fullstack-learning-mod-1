@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://pbs.twimg.com/profile_images/1257445318146379776/Unh1OwPF_400x400.jpg);
+    background-size: 50px 50px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    /* border: 5px solid yellow; */
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 250px 1fr 4fr 1fr;
+    max-width: 1200px;
+}
+
+header {
+    background-color: teal;
+    grid-column: span 12;
+}
+
+header img {
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    background-color: red;
+    color: white;
+    grid-column: span 12;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+aside {
+    background-color: skyblue;
+    grid-column: span 3;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    display: grid;
+    place-items: center;
+}
+
+main {
+    background-color: orange;
+    grid-column: span 9;
+    background-image: url(https://cdn.pixabay.com/photo/2017/11/28/19/48/animal-2984487_1280.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: yellow;
+    font-size: large;
+    text-shadow: 5px 5px 10px blue;
+}
+
+footer {
+    background-color: olive;
+    grid-column: span 12;
+    display: flex;
+    font-size: 2rem;
+}
+
+.tr {
+    background-color: red;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.sp {
+    background-color: yellow;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+
+}
