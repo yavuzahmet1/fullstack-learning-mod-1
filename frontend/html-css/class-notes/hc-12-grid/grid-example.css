@@ -6,6 +6,7 @@
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(5, 100px) 30px;
+    max-width: 1000px;
 }
 
 .content {
@@ -15,4 +16,30 @@
 .content1 {
     background-color: silver;
     grid-area: 2/1/4/2;
+}
+
+.content2 {
+    background-image: url("https://picsum.photos/id/566/600/400");
+    background-size: cover;
+    grid-area: 1/2/3/4;
+}
+
+.content3 {
+    background-color: orange;
+    grid-area: 2/3/3/4;
+    opacity: 0.7;
+
+}
+
+.content4 {
+    background-image: url("https://picsum.photos/id/237/600/400");
+    background-size: cover;
+    grid-column: 4/span 2;
+    grid-row: 1/span 2;
+}
+
+.content5 {
+    background-color: teal;
+    grid-area: 2/5/3/6;
+    opacity: 0.7;
 }
