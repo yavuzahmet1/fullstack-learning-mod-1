@@ -354,6 +354,11 @@ span {
         font-size: 1.5rem;
     }
 
+    .home-content {
+        width: 100%;
+        line-height: 1.7rem;
+    }
+
     .home-content .name {
         font-size: 2rem;
     }
@@ -376,15 +381,15 @@ span {
         justify-content: center;
         align-items: center;
         border-radius: 50%;
-        margin-right: 2rem;
-        s
     }
 
     .btn {
+        width: 3rem;
         padding: 1rem 3rem;
         letter-spacing: 0.2rem;
         font-weight: 600;
         margin-left: 2rem;
+        margin-bottom: 9rem;
     }
 
     section {
@@ -409,5 +414,24 @@ span {
 
     .info {
         font-size: 1rem;
+    }
+
+    .about {
+        margin-top: 10rem;
+    }
+
+    .about-content {
+        width: 100%;
+        position: relative;
+        line-height: 1.7rem;
+    }
+
+    .about-img {
+        min-width: 400px;
+        position: absolute;
+        z-index: -1;
+        left: 15%;
+        top: -5;
+        opacity: 0.2;
     }
 }
