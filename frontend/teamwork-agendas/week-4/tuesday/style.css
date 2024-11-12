@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.calculator {
+    width: 500px;
+    height: 500px;
+    border-radius: 20%;
+    background-color: black;
+}
+
+.show {
+    display: flex;
+    flex-direction: column;
+}
