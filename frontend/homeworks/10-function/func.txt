@@ -1,0 +1,226 @@
+
+ 
+
+5-Armstrong Sayısı Kontrolü: Girilen bir sayının basamaklarının küplerinin
+
+toplamı kendisine eşitse Armstrong sayısıdır (ör. 153 = 1³ + 5³ + 3³). Bu tür
+
+sayıları bulan bir fonksiyon yazın.
+
+ 
+
+ 
+
+**********
+
+**********
+
+**********
+
+ 
+
+ 
+
+6-İki Sayının EBOB'unu Bulma: Kullanıcıdan iki sayı alarak, bu iki sayının en
+
+büyük ortak bölenini (EBOB) bulan bir fonksiyon yazın.
+
+ 
+
+**********
+
+**********
+
+**********
+
+ 
+
+7-Bir Sayının Basamaklarının Toplamını Bulma: Kullanıcının girdiği sayının
+
+basamaklarının toplamını hesaplayan bir fonksiyon yazın.
+
+ 
+
+**********
+
+**********
+
+**********
+
+ 
+
+8-Dört Basamaklı Palindrom Sayıları Bulma: 1000 ile 9999 arasındaki
+
+palindrom (tersi kendisine eşit) sayıları ekrana yazdıran bir fonksiyon yazın.
+
+ 
+
+**********
+
+**********
+
+**********
+
+ 
+
+9-Rakamları Arasında Belirli Bir Sayı Farkı Olan Sayılar: Kullanıcıdan iki sayı
+
+aralığı alarak, rakamları arasındaki fark belirli bir değere eşit olan sayıları
+
+bulup listeleyen bir fonksiyon yazın.
+
+ 
+
+**********
+
+**********
+
+**********
+
+ 
+
+10-Bir Sayıyı Basamaklarına Ayırma: Verilen bir sayıyı basamaklarına ayırarak
+
+her basamağı tek tek gösteren bir fonksiyon yazın
+
+ 
+
+**********
+
+**********
+
+**********
+
+ 
+
+
+
+ 
+
+ 
+
+12-Bir Sayının Tam Bölenlerini Bulma: Kullanıcının girdiği sayının tüm tam
+
+bölenlerini bulan bir fonksiyon yazın.
+
+ 
+
+**********
+
+**********
+
+**********
+
+ 
+
+13-Üçgen mi, Çember mi Daha Büyük Alan?: Kullanıcıdan bir üçgenin kenar
+
+uzunluklarını ve bir çemberin yarıçapını alarak, hangi şeklin daha büyük
+
+alana sahip olduğunu bulan bir fonksiyon yazın.
+
+ 
+
+**********
+
+**********
+
+**********
+
+ 
+
+14-Bir Sayıyı Üç Basamaklı Yapma: Verilen sayının üç basamaklı bir sayı
+
+olacak şekilde önüne sıfır ekleyen bir fonksiyon yazın (örn. 7 → 007).
+
+
+
+ 
+
+15-Sayının Faktöriyelini Hesaplama: Kullanıcıdan alınan sayının faktöriyelini
+
+hesaplayan bir fonksiyon yazın.
+
+ 
+
+**********
+
+**********
+
+**********
+
+ 
+
+16-Üslü Sayı Hesaplama: Kullanıcıdan taban ve üs değeri alarak, bu iki sayıyı
+
+kullanarak üslü sayı işlemi gerçekleştiren bir fonksiyon yazın.
+
+ 
+
+**********
+
+**********
+
+**********
+
+ 
+
+17-Bir Sayıyı Binary (İkili) Sisteme Çevirme: Kullanıcının girdiği bir sayıyı ikili
+
+(binary) sisteme çeviren bir fonksiyon yazın.
+
+ 
+
+let enterForBinary=56;
+
+ 
+
+function turnToBinary(n){
+
+let baseBinary;
+
+ 
+
+for(let i=0;i
+
+ 
+
+ 
+
+18-Pi'nin İlk N Basamağını Yazdırma: Girilen sayı kadar Pi'nin ilk basamağını
+
+ekrana yazdıran bir fonksiyon yazın (Pi = 3.14159… olarak kabul edin).
+
+ 
+
+**********
+
+**********
+
+**********
+
+ 
+
+19-Sayının Sayı Basamağı Olup Olmadığını Bulma: Kullanıcıdan bir sayı alarak,
+
+bu sayının içinde belirli bir basamak olup olmadığını kontrol eden bir
+
+fonksiyon yazın (örn. 752 içinde "5" rakamı var mı?).
+
+ 
+
+**********
+
+**********
+
+**********
+
+ 
+
+ 
+
+    </script>
+
+  </body>
+
+</html>
