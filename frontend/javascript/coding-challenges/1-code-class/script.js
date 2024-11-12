@@ -45,19 +45,37 @@
 
 // }
 
-// belirli harf kaç tane geçiyor
+// belirli harf kelime içinde kaç tane geçiyor;
 
-let world = "clarusway"
-let letter = "a"
-let count = 0;
+// let world = "clarusway"
+// let letter = "a"
+// let count = 0;
 
-const countWorld = (n, k) => {
+// const countWorld = (n, k) => {
 
-    for (let index = 0; index < n.length; index++) {
-        if (n[index] === k) count++
-    }
-    return count
+//     for (let index = 0; index < n.length; index++) {
+//         if (n[index] === k) count++
+//     }
+//     return count
+// }
+
+// console.log(`${world} kelimesinden ${letter} harfinden ${countWorld(world, letter)} tane var`);
+
+// 5-Elektrik Faturası Hesaplama (Loop ve Conditional)
+// Bir kişinin elektrik tüketimine göre fatura hesaplayan bir fonksiyon yaz. Elektrik birim fiyatı 0.5 TL ve her 100 birimden sonra ekstra %5 vergi ekleniyor. Kullanıcıdan aylık tüketimini al ve 100 birimlik aralıklar halinde faturasını hesapla. Sonucunda, tüm aralıklar ve toplam maliyet çıktı olarak verilsin.
+
+let invoiceAmount = 459;
+let unitPrice = 0.5;
+let tax = 0.05;
+
+const invoiceAccount = () => {
+
 }
 
-console.log(`${world} kelimesinden ${letter} harfinden ${countWorld(world, letter)} tane var`);
+// 6. Yıllık Faiz Hesaplama (Loop ve Function)
+// Bir miktarın yıllık bileşik faizini hesaplayan bir fonksiyon yaz. Başlangıç miktarını, faiz oranını ve yıl sayısını kullanıcıdan alarak her yılın sonunda birikmiş toplam miktarı göster. Bileşik faiz, her yıl sonu miktarına eklenerek hesaplanır.
 
+
+
+
+// 7.Bir arkadaşınız, uzun bir metnin içinde gizli bir kelime olduğunu söylüyor ve bu kelime büyük harfle yazılı. Metin içinde sadece büyük harfleri alarak gizli kelimeyi bulan bir fonksiyon yazın.
