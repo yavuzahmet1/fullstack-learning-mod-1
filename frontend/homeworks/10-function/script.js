@@ -141,9 +141,7 @@ const inverse = (n) => {
     let tempString = n.toString().split("").reverse().join("");
     return parseInt(tempString);
 }
-
 inverse(enterNumber);
-
 
 ///? 4-Excellent number control
 
@@ -203,9 +201,104 @@ function makeThree(n) {
     return "00" + n.toString()
 }
 console.log(makeThree(enterNumberDigit));
+s
+//? 8-Find the sum of the digits of a number
+
+let stepCount = 253;
+
+function stepCalculate(n) {
+
+    let tempStep = n.toString().split("");
+    let total = 0;
+
+    for (let i = 0; i < tempStep.length; i++) {
+        total += Number(tempStep[i])
+    }
+    console.log(`you entered to number total : ${total}`);
+}
+stepCalculate(stepCount)
+
+//? 9-Finding the exact divisors of a number
+
+let exactDivisors = 54;
+
+function divisors(n) {
+
+    let mergeDivisors;
+
+    for (let i = 1; i <= n; i++) {
+        if (exactDivisors % i === 0) {
+            mergeDivisors += "," + i.toString();
+        }
+    }
+    console.log(mergeDivisors);
+}
+divisors(exactDivisors)
+
+//? 10-Calculating exponential numbers=>Davetsiz misafir fonksiyonu ile çözüldü
+
+let bases = 3;
+let exponents = 3;
+
+(function (x, y) {
+    console.log(`Bases ${bases} => ${exponents} result ${Math.pow(bases, exponents)}`)
+})(bases, exponents)
+
+//? 11-Calculating the factorial of the number
+
+let factorialNumber = 5;
+
+(function (n) {
+    let calculator = 1;
+    for (; n >= 1; n--) {
+        calculator *= n
+        console.log(`${n}!`)
+    }
+    console.log(`result : ${calculator}`)
+})(factorialNumber);
+
+//? 12-How to find out if the number has a digit
+
+let n = 467;//+prompt("Enter a number");
+let findNum = 6;
+
+const findingNumber = (k) => {
+    let count = 0;
+    let toStrN = "";
+    toStrN = n.toString();
+
+    for (let i = 0; i < toStrN.length; i++) {
+        if (toStrN[i] == k) count++;
+    }
+
+    const resultFind = count == 0 ? `There is no call in the number you entered` : `There are ${count} digits in the number you entered`
+    console.log(resultFind);
+}
+findingNumber(n);
+
+//? 13-Finding Four-digit palindrome numbers
+
+let startNumber = 1000;
+let endNumber = 9999;
+
+const isPalindrome = (n) => {
+    let numberToString = "";
+    let lenghtN = n.toString().length;
+
+    for (let i = lenghtN - 1; i >= 0; i--) {
+        numberToString += n.toString()[i];
+        if (n == numberToString) {
+            console.log(numberToString)
+        }
+    }
+}
+
+for (; startNumber <= endNumber; startNumber++) {
+    isPalindrome(startNumber)
+}
 
 
-//? 8-Converting a number to a binary system
+//? 14-Converting a number to a binary system
 
 let enterForBinary = 56;
 
@@ -228,77 +321,3 @@ console.log(enterForBinary.toString(2));
 //     return base;
 // }
 // console.log(turnToBinary(enterForBinary));
-
-//? 9-Find the sum of the digits of a number
-
-let stepCount = 253;
-
-function stepCalculate(n) {
-
-    let tempStep = n.toString().split("");
-    let total = 0;
-
-    for (let i = 0; i < tempStep.length; i++) {
-        total += Number(tempStep[i])
-    }
-    console.log(`you entered to number total : ${total}`);
-}
-stepCalculate(stepCount)
-
-//? 10-Finding the exact divisors of a number
-
-let exactDivisors = 54;
-
-function divisors(n) {
-
-    let mergeDivisors;
-
-    for (let i = 1; i <= n; i++) {
-        if (exactDivisors % i === 0) {
-            mergeDivisors += "," + i.toString();
-        }
-    }
-    console.log(mergeDivisors);
-}
-divisors(exactDivisors)
-
-//? 11-Calculating exponential numbers=>Davetsiz misafir fonksiyonu ile çözüldü
-
-let bases = 3;
-let exponents = 3;
-
-(function (x, y) {
-    console.log(`Bases ${bases} => ${exponents} result ${Math.pow(bases, exponents)}`)
-})(bases, exponents)
-
-//? 12-Calculating the factorial of the number
-
-let factorialNumber = 5;
-
-(function (n) {
-    let calculator = 1;
-    for (; n >= 1; n--) {
-        calculator *= n
-        console.log(`${n}!`)
-    }
-    console.log(`result : ${calculator}`)
-})(factorialNumber);
-
-//? 13-How to find out if the number has a digit
-
-let n = 467;//+prompt("Enter a number");
-let findNum = 6;
-
-const findingNumber = (k) => {
-    let count = 0;
-    let toStrN = "";
-    toStrN = n.toString();
-
-    for (let i = 0; i < toStrN.length; i++) {
-        if (toStrN[i] == k) count++;
-    }
-
-    const resultFind = count == 0 ? `There is no call in the number you entered` : `There are ${count} digits in the number you entered`
-    console.log(resultFind);
-}
-findingNumber(n);
