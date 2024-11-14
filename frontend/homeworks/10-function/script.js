@@ -299,25 +299,27 @@ for (; startNumber <= endNumber; startNumber++) {
 
 
 //? 14-Converting a number to a binary system
+let enterANumber = +prompt("Enter a number.")
 
-let enterForBinary = 56;
+const toBinary = (n) => {
+    let numberToBinary = Math.trunc(n).toString(2);// olaki ondalıklı sayı girildiğinde .trunc() ile tam sayı kısmını alıyoruz
+    console.log(numberToBinary)
+}
+toBinary(enterANumber);
 
-console.log(enterForBinary.toString(2));
+//? 15-Is a Triangle or a Circle a Larger Area
+let hight = 6;
+let base = 7;
+let r = 8;
 
-// function turnToBinary(n) {
-//     let baseBinary = "";
-//     let remaining = 0;
-//     let base = 0;
-//     //baseBinary = n.toString().split(``);
-//     console.log(baseBinary);
-//     while (n > 0) {
-//         remaining = n % 2;
-//         //console.log(remaining);
-//         baseBinary = remaining + baseBinary;
-//         // console.log(base);
-//         n = Math.floor(n / 2);
-//         // console.log(base);
-//     }
-//     return base;
-// }
-// console.log(turnToBinary(enterForBinary));
+const whichBig = (h, a, r) => {
+    let triangle = Math.floor((a * h) / 2);
+    let circle = Math.floor(Math.PI * Math.pow(r, 2))
+    const result = triangle > circle ? `Ucgenin alanı : ${triangle} büyüktür Dairenin alanından ${circle}`
+
+        : triangle < circle ? `Dairenin  alanı : ${circle} büyüktür üçgenin alanından ${triangle}`
+            : `Ucgenin alanı : ${triangle} eşittir Dairenin alanından ${circle}`;
+    console.log(result)
+}
+whichBig(hight, base, r);
+
