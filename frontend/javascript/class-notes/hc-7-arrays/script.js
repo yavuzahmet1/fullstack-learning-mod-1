@@ -72,7 +72,38 @@ console.log(cars);
 cars.sort()// varsayılan küçükten büyüğe
 console.log(cars);
 
+//sayısal sırlamada hata verebilir bunu
+const numbers1 = [3, 5, 2, 3, 6, 5]
+numbers1.sort((a, b) => a - b)//küçükten büyüğe
+numbers1.sort((a, b) => b - a)//büyükten küçüğe sıralama yapar
 
+const number = [3, 5, 2, "4", "bes", "dort", 3, 6, "bes", 5]
+//! .length
+//*dizinin karakter sayısını verir
+console.log(number.length);
 
+//! .includes()
+//* bir elemanın dizide ulunup bulunmadığını true veya false olarak dönderir
+console.log(number.includes("bes"));
+
+//! .indexOf(), .lastIndexOf()
+//* bir array içinde aradığımız elemanı ilk gördüğün indexin numarasını verir
+//* array içinde eleman yoksa -1 döner
+
+console.log(number);
+console.log(number.indexOf("dort"));
+
+//! join
+//* dizideki tüm elemanları belirtilen bir ayraç ile birleştirir ve string olarak dönderir
+
+//* ama kendimiz parantez içinde bir işaret  yada herhangi bir karakter de ekleyebiliriz ara koyar
+
+const statement = ["read", "da", "adam", "ol"]
+console.log(statement.join(" "));
+
+//! slice()
+//* .slice(start,end);
+//* end verilmezse sonuna kadar olanı alır
+console.log(number.slice(2, 7));//ikinci indisden  ilki dahil sonuncusu hariç öncesini alır
 
 
