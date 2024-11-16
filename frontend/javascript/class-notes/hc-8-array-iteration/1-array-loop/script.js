@@ -145,6 +145,64 @@ const macBookTL = [90000, 75000, 60000, 40000, 30000];
 const euro = 36.29;
 const dolar = 33.06;
 
+const euroInReturn = macBookTL.map((item) => (item / euro).toFixed(2))
+const dollarReturn = macBookTL.map((item) => (item / dolar).toFixed(2))
+
+console.log(`Euro : ${euroInReturn}, Dollar : ${dollarReturn}`);
+
+//*MAP() methoduda 3 parametre verir
+
+//?-------------- ÖRNEK-2 -------------------
+//?Öğrencinin sırasını,notunu ve başarı durumunu döndüren bir işlem
+//? Notu 50den büyükse başarılı değilse başarısız
+
+const exam = [85, 72, 95, 60, 47, 88];
+
+const examResult = exam.map((note, index, arr) => {
+    const status = note >= 50 ? "succesful" : "unsuccesful";
+    return `${index + 1}. stutent has note : ${note}, status : ${status} `
+})
+console.log(examResult);
+
+//! FILTER METHOD
+
+const salaries = [9000, 3000, 5500, 7500, 12300, 2500];
+const bigSalary = salaries.filter((salar) => salar > 5000)
+console.log(bigSalary);
+
+const namesLenght = ["Ahmet", "Ali", "Nazan", "Veli", "Samet"];
+const newArr = namesLenght.filter((item) => item.length <= 4)
+console.log(newArr);
+
+//* =======================================
+//*          CHAINING (PIPELINE)
+//* =======================================
+
+//? ORNEK: maasi 50000'den az olanları tespit edip %30 zam yapalım ve bunları yeni bir dizide toplayalım (orjinal diziyi degistirmeden)
+
+const poors = salaries.filter((salary) => salary < 5000)
+console.log(poors)
+const lessPoor = poors.map((salary) => salary * 1.3)
+console.log(lessPoor)
+
+//? chaining
+const increasedSalary = salaries.filter((salary) => salary < 5000).map((salary) => salary * 1.3)
+console.log(increasedSalary)
+const raised = salaries.filter((salary) => salary < 5500).map((salary) => salary * 1.3).forEach((salary) => console.log(salary))
+console.log(raised)
+/*3900
+3250
+undefined*///niye forEach undefined çünkü forEach ler değer döndermez, void dir
+
+//! EVERY()
+
+//* true yada false değeri dönderir and gibi çalışır tüm değerler şarta uyarsa True uymazsa False değer dönderir
+
+//! SOME()
+
+//* true yada false değeri dönderir or gibi çalışır değerlerden birini sağlarsa True değer dönderir hiç sağlamazsa False dönderir
+
+
 
 
 
