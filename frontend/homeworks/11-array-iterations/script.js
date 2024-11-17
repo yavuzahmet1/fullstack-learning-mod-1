@@ -3,7 +3,7 @@
 //! WARMING UP QUESTIONS
 
 let numbers = [1, 56, 99, 100, 132, -14, 68, -178, 91, 10, 54, -198, 7, 3, 6, 11, -125, 1290];
-let strArrays = ["Apple", "Cat", "Ball", "Cartoon", "Banana", "Avocado", "Juice", ["pear", "muskmelon", "watermelon"]];
+let strArrays = ["Apple", "Cat", "Ball", "Cartoon", "Banana", "Avocado", "Juice"];
 
 //* 1-Write a function that squares the positive numbers in an array and returns the ones whose result is greater then 50.
 
@@ -153,16 +153,10 @@ const straightArray = (arr) => {
 straightArray(strArrays)
 
 //* 19-A function that separates the words in an array into letters and turns them into a straight list in summer.
-// bu soruyu araştırarak yaptım 2 farklı kullanım mevcut olduğunu gördüm flatMap() ve map().flat()
 const sentenceToLetter = (arr) => {
-    return arr.flatMap(item => item.split(""));
+    return arr.map(item => item.split()).join("");
 }
 console.log(sentenceToLetter(strArrays));
-
-const sentenceToLetter2 = (arr) => {
-    return arr.map(item => item.split("")).flat();
-}
-console.log(sentenceToLetter2(strArrays));
 
 //* 20-Write a function that calculates the sum of even numbers in an array.
 
