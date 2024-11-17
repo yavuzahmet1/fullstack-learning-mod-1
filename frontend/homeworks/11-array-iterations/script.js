@@ -146,11 +146,14 @@ const olderThan4Char = (arr) => {
 olderThan4Char(strArrays)
 
 //* 18-Write a function that turns the substrings in an array into a flat list.
-
+//.flat()=>diye bir fonksiyon var alt dizileri de alarak düz bir liste haline getiriyor
+let strArraysIn = ["Apple", "Cat", "Ball", ["Cartoon", "Banana", ["Avocado", "Juice", "orange"], "cheery"]];
 const straightArray = (arr) => {
-
+    let result = arr.flat(Infinity);
+    return result
 }
-straightArray(strArrays)
+console.log(`Straight Array: ${straightArray(strArraysIn)}`);
+
 
 //* 19-A function that separates the words in an array into letters and turns them into a straight list in summer.
 const sentenceToLetter = (arr) => {
@@ -168,3 +171,6 @@ const evenTotalInArray = (arr) => {
     console.log(`the sum of the even numbers in the sequence : ${total}`);
 }
 evenTotalInArray(numbers)
+
+
+
