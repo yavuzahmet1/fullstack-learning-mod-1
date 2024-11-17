@@ -147,15 +147,16 @@ olderThan4Char(strArrays)
 
 //* 18-Write a function that turns the substrings in an array into a flat list.
 //.flat()=>diye bir fonksiyon var alt dizileri de alarak düz bir liste haline getiriyor
-let strArraysIn = ["Apple", "Cat", "Ball", ["Cartoon", "Banana", ["Avocado", "Juice", "orange"], "cheery"]];
+let strArraysIn = ["Apple", "Cat", "Ball", ["Cartoon", "Banana", ["Avocado", ["example", ["oranges"]], "Juice", "orange"], "cheery"]];
 const straightArray = (arr) => {
-    let result = arr.flat(Infinity);
+    let result = arr.flat();
     return result
 }
 console.log(`Straight Array: ${straightArray(strArraysIn)}`);
 
 
 //* 19-A function that separates the words in an array into letters and turns them into a straight list in summer.
+console.log("Question 19");
 const sentenceToLetter = (arr) => {
     return arr.map(item => item.split()).join("");
 }
