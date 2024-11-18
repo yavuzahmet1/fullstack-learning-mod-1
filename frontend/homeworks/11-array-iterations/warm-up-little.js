@@ -25,6 +25,18 @@ const isEvenOrOdd = (arr) => {
 }
 isEvenOrOdd(numbers);
 
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// const [oddSum, evenSum] = numbers.reduce(
+//   (acc, n) => {
+//     n % 2 === 0 ? (acc[0] += n) : (acc[1] += n);
+//     return acc;
+//   },
+//   [0, 0]
+// );
+
+console.log("Odd Sum:", oddSum, "| Even Sum:", evenSum);
+
 //* 3-Write an algorithm that calculates the sum of the numbers following each element in an array and creates an new array
 
 const sumNumberFollowing = (arr) => {

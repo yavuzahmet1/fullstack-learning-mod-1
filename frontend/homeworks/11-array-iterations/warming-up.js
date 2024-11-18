@@ -154,6 +154,23 @@ const straightArray = (arr) => {
 }
 console.log(`Straight Array: ${straightArray(strArraysIn)}`);
 
+// const denemeArray = ["1", 2, 5, ["test", 4, "Türkiye", "loremipsum"]];
+
+// function flattenArray(arr) {
+//   return arr.reduce((acc, current) => {
+//     // Eğer current bir dizi ise, özyinelemeli olarak flattenArray çağır
+//     if (Array.isArray(current)) {
+//       return acc.concat(flattenArray(current));
+//     } else {
+//       return acc.concat(current);
+//     }
+//   }, []);
+// }
+
+// const result = flattenArray(denemeArray);
+
+// console.log(result);
+
 
 //* 19-A function that separates the words in an array into letters and turns them into a straight list in summer.
 console.log("Question 19");
@@ -161,6 +178,10 @@ const sentenceToLetter = (arr) => {
     return arr.map(item => item.split()).join("");
 }
 console.log(sentenceToLetter(strArrays));
+
+// const words = ["bir", "gün", "herkes", "fenerbahçeli", "olacak"];
+//   const letter = words.map((word) => word.split("")).flat();
+//   console.log(letter);
 
 //* 20-Write a function that calculates the sum of even numbers in an array.
 
