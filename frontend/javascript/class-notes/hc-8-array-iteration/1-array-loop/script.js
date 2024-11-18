@@ -201,7 +201,143 @@ undefined*///niye forEach undefined çünkü forEach ler değer döndermez, void
 //! SOME()
 
 //* true yada false değeri dönderir or gibi çalışır değerlerden birini sağlarsa True değer dönderir hiç sağlamazsa False dönderir
+/*--------------------------------------------------------------------------------------------------------------------------------*/
 
+//!                                     NOT ÖZET
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+//* FOREACH():
+//1-Boş hücrenin atlandığını ve tanımsız hiçbir hücrenin yazdırılmadığını unutmayın
+//2-Geri dönüş değeri yoktur
+//3-Kullanım: Yalnızca her eleman üzerinde işlem yapmak için uygundur 
+//4-forEach() metodu bize bir değer döndürmez; yani hiçbir şey döndürmez (undefined). Bu yüzden forEach() yeni bir dizi ya da veri oluşturmak için değil, bir dizi üzerinde yan etkiler (örneğin, konsola yazdırma veya dış bir değişkeni güncelleme) yaratmak için kullanılır.
+
+//*MAP():
+//1-Her eleman üzerinde işlem yapıp yeni bir dizi döndürmek.
+//2-Mevcut diziyi değiştirmez, her zaman yeni bir dizi oluşturur.
+//3-Geri dönüş:İşlemden geçirilen her bir elemanın sonucundan oluşan yeni bir dizi.
+//4-Kullanım alanı:Dizi elemanlarını dönüştürmek. Verileri formatlamak veya başka bir yapı oluşturmak. ve 3 parametre alır.
+const users = [
+    { name: "Alice", age: 25 },
+    { name: "Bob", age: 30 },
+    { name: "Charlie", age: 35 },
+];
+const namess = users.map(user => user.name);
+console.log(names); // Çıktı: ["Alice", "Bob", "Charlie"]
+
+
+//*FILTER():
+//1-Amaç: Belirli bir koşulu sağlayan elemanlarla yeni bir dizi oluşturur.
+//2-Geri dönüş değeri: Filtrelenmiş yeni bir dizidir.
+//3-Kullanım: Koşula uyan elemanları seçmek için uygundur.
+
+//*EVERY():
+//1-Amaç: Dizideki tüm elemanların bir koşulu sağlayıp sağlamadığını kontrol eder.
+//2-Geri dönüş değeri: Boolean (true veya false).
+//3-Kullanım: Tüm elemanların bir kurala uyduğunu doğrulamak için uygundur.
+const nums = [2, 4, 6, 8];
+const allEven = nums.every(num => num % 2 === 0);
+console.log(allEven); // Çıktı: true
+
+//*SOME():
+//1-Amaç: Dizideki en az bir elemanın bir koşulu sağlayıp sağlamadığını kontrol eder.
+//2-Geri dönüş değeri: Boolean (true veya false).
+//3-Kullanım: Elemanlardan birinin bir kurala uyup uymadığını doğrulamak için uygundur.
+const hasEven = nums.some(num => num % 2 === 0);
+console.log(hasEven); // Çıktı: true
+
+//*FIND():
+//1-Amaç: Belirli bir koşulu sağlayan ilk elemanı bulur ve döner.
+//2-Geri dönüş değeri: Koşula uyan ilk eleman, eğer bulunamazsa undefined.
+//3-Kullanım: Tek bir elemanı seçmek için uygundur.
+const firstGreaterThan15 = nums.find(num => num > 15);
+console.log(firstGreaterThan15); // Çıktı: 20
+
+//*REDUCE():
+//1-Dizi elemanlarını birleştirerek tek bir sonuç döndürür.
+//2-İşlemler bir birikim (accumulator) üzerinden yapılır.
+//3-Geri dönüş değeri : Hesaplanan tek bir değer (örneğin, bir sayı, nesne, string veya başka bir yapı).
+//4-Kullanım alanı:Dizi elemanlarını toplamak, çarpmak. Bir diziyi nesneye veya başka bir yapıya dönüştürmek.
+//5- dizi elemanlarını birleştirerek tek bir sonuç üretebildiği için toplama, çarpma, gruplama, nesne oluşturma, hatta daha karmaşık işlemler için kullanılabilir. Bu esneklik, reduce()'u birçok farklı senaryo için kullanışlı hale getirir.
+//6-Bir diziyi işlemek ve aynı anda başka bir sonuç oluşturmak gerektiğinde, reduce() diğer yöntemlere göre daha uygundur. Örneğin, hem toplama hem de başka bir veri formatı oluşturma işini aynı anda yapabilirsiniz.
+//7-Bu gibi işlemler için map(), filter() ve forEach() gibi diğer yöntemleri birleştirmek yerine, reduce() ile tek bir işlemde sonuç alınabilir.
+//8-Kodun Daha Fonksiyonel ve Temiz Olmasını SağlarFonksiyonel programlama prensiplerini takip eden yazılımlarda, dizi manipülasyonları genellikle fonksiyonlar aracılığıyla yapılır. reduce(), karmaşık işlemleri tek bir yerde toplayarak daha okunabilir ve daha az hata içeren kod yazılmasına olanak tanır.
+//9-Performans Avantajı (Tek Bir Döngü ile İşlemler)
+//10-Daha Az Bağımsız Metot Gerektirir Diğer yöntemler (map, filter, some, every) genellikle tek bir görev için özelleştirilmiştir. Ancak reduce(), bu işlemlerin çoğunu kapsayabilir. Bu nedenle, karmaşık işlemleri yapmak için ek yöntemler yazmak gerekmez.
+//11-Dezavantajları Tabii ki reduce()'un aşırı kullanımı kodun daha karmaşık hale gelmesine neden olabilir: Okuması zorlaşabilir, özellikle başlangıç seviyesindeki geliştiriciler için. Bazı durumlarda, map() ve filter() gibi yöntemler daha net ve anlaşılır olabilir.
+
+const result = array.reduce((accumulator, currentValue, index, array) => {
+    // İşlem yapılacak kod
+    return updatedAccumulator;
+}, initialValue);
+/*accumulator: Biriken değer.
+currentValue: Şu anki eleman.
+index: Şu anki elemanın indeksi.
+array: Orijinal dizi.
+initialValue: accumulator için başlangıç değeri (isteğe bağlıdır, belirtilmezse ilk eleman alınır).*/
+
+const sums = numbers.reduce((acc, num) => acc + num, 0);
+console.log(sums); // Çıktı: 15
+
+const fruitss = ["apple", "banana", "apple", "orange", "banana", "apple"];
+
+const fruitCount = fruitss.reduce((acc, fruit) => {
+    acc[fruit] = (acc[fruit] || 0) + 1;
+    return acc;
+}, {});
+
+console.log(fruitCount);
+// Çıktı: { apple: 3, banana: 2, orange: 1 }
+
+const numberss = [10, 25, 30, 5, 40];
+
+const maxNumber = numberss.reduce((max, num) => (num > max ? num : max), numbers[0]);
+console.log(maxNumber); // Çıktı: 40
+
+const products = [
+    { name: "Laptop", price: 1000 },
+    { name: "Phone", price: 500 },
+    { name: "Tablet", price: 750 },
+];
+
+// Fiyatları al ve toplamlarını hesapla
+const totalCost = products
+    .map(product => product.price) // [1000, 500, 750]
+    .reduce((acc, price) => acc + price, 0);
+
+console.log(totalCost); // Çıktı: 2250
+
+//En pahalı ürünü bulan program
+const products = [
+    { name: "Laptop", price: 1000 },
+    { name: "Phone", price: 500 },
+    { name: "Tablet", price: 750 },
+];
+
+const result = products.reduce((acc, product) => {
+    acc.total += product.price; // Toplam fiyatı hesapla
+    if (product.price > acc.mostExpensive.price) {
+        acc.mostExpensive = product; // En pahalı ürünü bul
+    }
+    return acc;
+}, { total: 0, mostExpensive: { name: "", price: 0 } });
+
+console.log(result);
+// Çıktı:
+// { total: 2250, mostExpensive: { name: "Laptop", price: 1000 } }
+
+const numbers = [1, 2, 3, 4, 5, 6];
+
+// Hem çift sayıları bul hem de karesini al
+const squaredEvens = numbers.reduce((acc, num) => {
+    if (num % 2 === 0) {
+        acc.push(num ** 2);
+    }
+    return acc;
+}, []);
+
+console.log(squaredEvens); // Çıktı: [4, 16, 36]
 
 
 
