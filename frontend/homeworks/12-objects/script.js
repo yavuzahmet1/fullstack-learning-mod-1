@@ -52,8 +52,77 @@ const person = {
     address: { city: "Izmir", street: "lale", no: 5 },
     calculate: function () {
         return new Date().getFullYear() - this.birthOfDay;
+        // },
+        // sayHi: () => {
+        //     return "Hello!"
+        // },
+        //* objec içinde arrow function
+        // arrowFunction: () => {
+        //     console.log(this.isMarried);
+        //     console.log(person.isMarried);
+        //     return isMarried
+        // }
     }
 }
+// console.log(person);
+// console.log(person.isMarried);
+// console.log(person.calculate());
+// console.log(person.arrowFunction());
+
+//*------------READ/ACCESS
+
+//! 1- .(dot) notation ile erişim
+// console.log(person);
+// console.log(person.address);
+
+//! 2- [] square brackets, özellik yöntemi
+//* dinamik erişim için kullanılır
+
+console.log(person["name"]);
+
+const keyWord = "surname"
+console.log(person[keyWord]);
+
+//! yeni bir özellik (property) ekleme
+person.phone = "345-456-233";
+person[keyWord] = 1990;
 console.log(person);
-console.log(person.isMarried);
-console.log(person.calculate());
+
+//!object kopyalama
+//*shallow copy (sığ) kopyalama
+const firmaPersoneli = person
+console.log(`Person : ${person.name}`);
+console.log(`Firma Personel : ${firmaPersoneli.name}`);
+
+//! 2 Deep Copy yöntemi
+//*JSON.stringify() ve JSON.parse()
+
+const deepCopy = JSON.parse(JSON.stringify(person))
+console.log(deepCopy);
+
+//*--------------Object Methods---------------
+//? iç içe (nested) Object kullanımı
+
+const employeeList = {
+    person1: { name: "Salih", surname: "Kara", age: 45 },
+    person2: { name: "Kaya", surname: "Zaman", age: 49 },
+    person3: { name: "Ahmet", surname: "Yalçın", age: 42 },
+    person4: { name: "Yahya", surname: "Sündüz", age: 58 }
+}
+console.log(employeeList.person2.surname);
+console.log(employeeList["person3"]["name"]);
+
+//* FOR-OF-IN YAPISI
+
+const keys = Object.keys(person);
+console.log(keys);
+
+//* VALUE lara erişim sağlamak için Object.values()
+
+const value = Object.values(person)
+console.log(value);
+
+//* Object.Entries
+
+const data = Object.entries(person)
+console.log(data);
