@@ -74,7 +74,7 @@ team.forEach(item => {
 //* =============================================
 //*  DESTRUCTURING (ARRAY)
 //* =============================================
-const people = ["Ali", "Veli", "Mehmet", "Ahmet"];//burada sıra önemli değil ama objectlerde önemli
+const people = ["Ali", "Veli", "Mehmet", "Ahmet"]; //burada sıra önemli değil ama objectlerde önemli
 console.log();
 //* ==============================================
 //*  REST (...)
