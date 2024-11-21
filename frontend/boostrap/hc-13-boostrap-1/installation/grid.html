@@ -34,7 +34,21 @@
         </div>
     </div>
 
-
+    <!-- Sadece xs ekranlarda gözükecek bir element tasarlayınız.
+      Sadece xs ekranlarda gözükmeyecek bir element tasarlayınız.
+      Sadece md ekranlarda gözükecek bir element tasarlayınız.
+      Sadece md ekranlarda gözükmeyecek bir element tasarlayınız.
+      Sadece md+ ekranlarda gözükecek bir element tasarlayınız.
+       -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12 bg-secondary d-block d-sm-none">Sadece xs ekranlarda gözükecek</div>
+            <div class="col-12 d-none d-md-block d-lg-none bg-danger">md ekranlarda gözükecek</div>
+            <div class="col-12 bg-warning d-none d-sm-block ">xs ekranlarda gözükmeyecek</div>
+            <div class="col-12 bg-primary d-block d-md-none d-lg-block">md ekranlarda gözükmeyecek</div>
+            <div class="col-12 bg-info d-none d-md-block">md+ ekranlarda gözükecek</div>
+        </div>
+    </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
