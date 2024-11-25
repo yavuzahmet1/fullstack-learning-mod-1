@@ -138,3 +138,40 @@ section#about {
 section#about .btn {
     background-color: var(--primary-color);
 }
+
+section#people {
+    height: 700px;
+    background-color: var(--section-color);
+}
+
+section#people .container {
+    background-color: var(--secondary-color);
+}
+
+section#people .card {
+    background-color: var(--primary-color);
+    transition: all 0.5s;
+    overflow: hidden;
+}
+
+section#people .card:hover {
+    transform: scale(1.05);
+
+}
+
+section#people .card img {
+    transition: all 0.5s;
+}
+
+section#people .card img:hover {
+    transform: scale(1.05);
+
+}
+
+section#people .card i {
+    transition: all 0.5s;
+}
+
+section#people .card i:hover {
+    opacity: 0.5;
+}
