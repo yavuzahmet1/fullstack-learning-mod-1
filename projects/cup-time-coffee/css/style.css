@@ -174,3 +174,23 @@ section#people .card i {
 section#people .card i:hover {
     opacity: 0.5;
 }
+
+/* OUR MENU */
+section#menu {
+    background-color: var(--secondary-color);
+    height: 700px;
+}
+
+section#menu .menu-header {
+    color: var(--primary-color)
+}
+
+section#menu .container {
+    background-color: var(--primary-color);
+}
+
+section#menu button {
+    background-color: var(--secondary-color);
+    margin-right: 1rem;
+
+}
