@@ -210,3 +210,30 @@ body {
 .container.active .toogle-right {
     transform: translateX(200%);
 }
+
+@media screen and (min-width: 400px) {
+    .container {
+
+        width: 768px;
+    }
+
+    .container button {
+        padding: 5px 20px;
+        font-weight: 400;
+        margin-top: 5px;
+    }
+
+    .icons a {
+        margin: 0 3px;
+        width: 15px;
+        height: 15px;
+    }
+
+    .container input {
+        margin: 8px 0;
+        padding: 5px 10px;
+        font-size: 15px;
+        border-radius: 8px;
+        width: 100%;
+    }
+}
