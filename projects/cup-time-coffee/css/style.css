@@ -146,6 +146,7 @@ section#people {
 
 section#people .container {
     background-color: var(--secondary-color);
+    padding: 2rem 1rem;
 }
 
 section#people .card {
@@ -156,7 +157,6 @@ section#people .card {
 
 section#people .card:hover {
     transform: scale(1.05);
-
 }
 
 section#people .card img {
@@ -165,7 +165,6 @@ section#people .card img {
 
 section#people .card img:hover {
     transform: scale(1.05);
-
 }
 
 section#people .card i {
