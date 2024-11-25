@@ -211,7 +211,7 @@ body {
     transform: translateX(200%);
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 389px) {
     .container {
 
         width: 768px;
