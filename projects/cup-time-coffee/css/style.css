@@ -1,37 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Ruge+Boogie&family=Sixtyfour+Convergence&display=swap');
-
 :root {
     --primary-color: #bc6c25;
     --secondary-color: #4d3822;
     --hover-color: #e76f51;
-    --section-color: #b78752;
+    --section-color: #B78752;
 
 }
+
+
+
 
 * {
-    font-family: "Plus Jakarta Sans", serif;
+    font-family: "Plus Jakarta Sans", sans-serif;
+
 }
 
-
-/* -------------------------------------------------------------------------- */
-/*                                   NAVBAR                                   */
-/* -------------------------------------------------------------------------- */
+/*! NAVBAR */
 
 .navbar {
+    background-color: transparent !important;
     position: fixed;
     z-index: 5;
     width: 100%;
 }
 
 .navbar .container {
-    background-color: rgba(0, 0, 0, 0.7);
-    text-transform: capitalize;
-    font-weight: bold;
-
+    background-color: rgba(0, 0, 0, 0.7) !important;
 }
+
+
 
 .navbar-nav {
     font-size: 1.3rem;
+    text-transform: capitalize;
+    text-transform: capitalize;
+    font-weight: bold;
 }
 
 .nav-link {
@@ -42,14 +44,12 @@
     color: var(--primary-color) !important;
 }
 
-
-/* -------------------------------------------------------------------------- */
-/*                                  CAROUSEL                                  */
-/* -------------------------------------------------------------------------- */
+/*! CAROUSEL */
 
 .carousel-item {
+    /* border: 5px solid red; */
+    /* height: calc(100vh - 135px); */
     height: 100vh;
-
 }
 
 .carousel-item img {
@@ -58,13 +58,21 @@
 }
 
 
+.carousel-caption {
+    /* border: 5px solid blue !important; */
+
+    bottom: 40%;
+
+}
+
 .carousel-caption .btn {
-    background-color: var(--primary-color);
+    background-color: #bc6c25;
     border: none;
     width: 10rem;
-    font-weight: bold;
     white-space: nowrap;
-    color: white
+    color: white;
+    font-weight: bold;
+
 }
 
 .carousel-caption .btn:first-child {
@@ -73,33 +81,31 @@
 
 .carousel-caption .btn:first-child:hover {
     background-color: white;
-    color: black
-}
-
-.carousel-caption {
-    bottom: 40%;
+    color: black;
 }
 
 .hero {
     position: relative;
-    z-index: 3
+    z-index: 3;
 }
 
 .black {
-    background-color: rgb(0, 0, 0, 0.7);
-    width: 450px;
-    height: 500px;
+    width: 350px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.809);
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) rotate(100deg);
+    transform: translate(-50%, -50%) rotate(40deg);
+    z-index: 2;
 
 }
 
 .carousel-indicators {
-    gap: 0.7rem;
-}
+    /* display: flex;   */
 
+    gap: 0.7rem !important;
+}
 
 .carousel-indicators button {
     background-color: var(--primary-color) !important;
@@ -107,90 +113,150 @@
     width: 3rem !important;
 }
 
-/* -------------------------------------------------------------------------- */
-/*                                    ABOUT                                   */
-/* -------------------------------------------------------------------------- */
-
-
+/*! ABOUT */
 section#about {
-    background-color: var(--secondary-color);
-    color: white;
 
+    background-color: var(--secondary-color);
 }
 
 .image-container {
+    /* border: 2px solid red; */
     position: relative;
+
 }
 
 .image-container img {
     width: 100%;
+
 }
 
-.about-info {
+
+.about-image-info {
+    background-image: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.509),
+            rgba(188, 108, 37, 1));
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(188, 108, 37, 0.5))
 }
 
-section#about .btn {
+section#about button {
     background-color: var(--primary-color);
+    border: none;
 }
+
+/*! POPLE */
+
 
 section#people {
-    height: 700px;
-    background-color: var(--section-color);
+    background-color: var(--section-color) !important;
 }
 
 section#people .container {
-    background-color: var(--secondary-color);
-    padding: 2rem 1rem;
+    background-color: var(--secondary-color) !important;
 }
 
 section#people .card {
     background-color: var(--primary-color);
-    transition: all 0.5s;
+    transition: all .5s;
     overflow: hidden;
+}
+
+section#people .card img {
+    transition: all .5s;
+}
+
+section#people .card img:hover {
+    transform: scale(1.05);
+
 }
 
 section#people .card:hover {
     transform: scale(1.05);
 }
 
-section#people .card img {
+section#people i {
     transition: all 0.5s;
 }
 
-section#people .card img:hover {
-    transform: scale(1.05);
+section#people i:hover {
+    opacity: .8;
+
 }
 
-section#people .card i {
-    transition: all 0.5s;
-}
+/*! MENU */
 
-section#people .card i:hover {
-    opacity: 0.5;
-}
-
-/* OUR MENU */
 section#menu {
-    background-color: var(--secondary-color);
-    height: 700px;
-}
-
-section#menu .menu-header {
-    color: var(--primary-color)
-}
-
-section#menu .container {
-    background-color: var(--primary-color);
+    background-color: #4d3822;
+    color: black !important;
 }
 
 section#menu button {
-    background-color: var(--secondary-color);
+    background-color: #4d3822;
+    color: var(--primary-color) !important;
     margin-right: 1rem;
+}
 
+section#menu .container {
+
+    background-color: #bc6c25;
+    border: none;
+}
+
+section#menu .row {
+
+    /* height: 500px; */
+    /* align-items: center; */
+}
+
+.menu-header {
+    color: var(--primary-color);
+}
+
+section#menu .nav-pills {
+    font-size: 1.2rem;
+}
+
+/*! Contact */
+
+section#contact {
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.509),
+            rgba(188, 108, 37, 1)), url(../img/slider2.jpg);
+}
+
+input,
+textarea {
+    background-color: inherit !important;
+    resize: none;
+}
+
+input:focus,
+textarea:focus,
+textarea label:focus {
+    background-color: var(--primary-color) !important;
+
+}
+
+input::placeholder {
+    color: white !important;
+}
+
+label {
+    font-style: italic;
+    color: white;
+}
+
+.google-map {
+    filter: grayscale(100);
+    border-radius: 20px;
+}
+
+
+/*! Footer */
+
+footer {
+    background-color: var(--primary-color);
 }
