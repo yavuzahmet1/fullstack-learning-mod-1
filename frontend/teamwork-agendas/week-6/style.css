@@ -1,0 +1,5 @@
+.banner {
+    background: url('./img/banner.jpeg') center center no-repeat;
+    background-size: cover;
+    color: purple;
+}
