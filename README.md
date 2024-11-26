@@ -4,6 +4,7 @@ It contains my repo information covering both front-end and back-end aspects of 
 I saw in both paths during the training process and tried to apply them practically to the projects. If you would like to help me in my development regarding the content, you can let me know. Thank you in advance.
 
 ---
+![Proje Demosu](images/fs.gif)
 
 ## 📋 İçindekiler
 
