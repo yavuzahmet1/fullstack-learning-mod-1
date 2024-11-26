@@ -26,7 +26,7 @@
 
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">Harvey Tech</a>
+            <a class="navbar-brand" href="#">Yavuz Tech</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -35,45 +35,38 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
+                        <a class="nav-link" href="#services">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Portfolio</a>
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About us</a>
+                        <a class="nav-link" href="#aboutus">About us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Staff</a>
+                        <a class="nav-link" href="#staff">Staff</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact us</a>
+                        <a class="nav-link" href="#contactus">Contact us</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-
     <!--! BANNER -->
-    <!--& fluid con, con, h2-6, h1-1, a-button-->
 
-    <div class="container-fluid banner text-center vh-100 d-flex justify-content-center align-items-center ">
+    <div class="container-fluid banner text-center vh-100 d-flex justify-content-center align-items-center">
         <div class="container">
             <h2 class="display-6">The IT Career of Your Dreams Starts Here!</h2>
-            <h1 class="display-1">Harvey Tech</h1>
-            <a href=""><button class="btn btn-danger btn-lg">Our Services</button></a>
+            <h1 class="display-1">Yavuz Tech</h1>
+            <a href="#services"><button class="btn btn-danger btn-lg">Our Services</button></a>
         </div>
     </div>
 
     <!--! SERVICES -->
-    <!--& con, h1-3,p-lor10,row-col, span, h3,p-lor10-->
-    <!-- 
-  <span class="icon"><i class="fas fa-code fa-5x"></i></span>
-  <span class="icon"><i class="fas fa-palette fa-5x"></i></span>
-  <span class="icon"><i class="fas fa-network-wired fa-5x"></i></span> -->
 
-    <div class="container text-center py-5">
+    <div class="container text-center py-5" id="services">
         <h1 class="display-3">Services</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, praesentium!</p>
         <div class="row mt-4">
@@ -96,9 +89,8 @@
     </div>
 
     <!--! PORTFOLIO -->
-    <!--& fluid con, h1-3,p-lor20, con, row-col, -->
 
-    <div class="container-fluid text-center py-5 bg-light">
+    <div class="container-fluid text-center py-5 bg-light" id="portfolio">
         <h1 class="display-3">Portfolio</h1>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae veritatis eaque, maxime commodi veniam nobis
             et
@@ -175,10 +167,9 @@
         </div>
     </div>
 
-
     <!--! ABOUT US -->
-    <!--& fluid con, h1-3,p-lor10,con row-col (p-lor15*4,img)-->
-    <div class="container-fluid text-center py-5">
+
+    <div class="container-fluid text-center py-5" id="aboutus">
         <h1 class="display-3">About us</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, tempora.</p>
         <div class="container">
@@ -200,12 +191,9 @@
             </div>
         </div>
     </div>
-
-
     <!--! OUR TEAM -->
-    <!--&fluid con, h1-3,p-lor20,con,row-col(img,h4,p,p-social media)-->
 
-    <div class="container-fluid text-center py-5 bg-light">
+    <div class="container-fluid text-center py-5 bg-light" id="staff">
         <h1 class="display-3">Our Team</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nobis voluptates voluptas nihil at vel, rem
             ipsa culpa quibusdam molestiae.</p>
@@ -239,7 +227,7 @@
                 </div>
                 <div class="col-sm-12 col-md-4">
                     <img class="team rounded-circle" src="./img/harvey.png" alt="" width="260px">
-                    <h4 class="mt-2">Harvey Watson</h4>
+                    <h4 class="mt-2">Ahmet YAVUZ</h4>
                     <p>Mobile Developer</p>
                     <p>
                         <a href="#" class="social btn btn-dark border border-dark rounded-circle m-1 text-white">
@@ -255,9 +243,8 @@
     </div>
 
     <!--! CLIENTS -->
-    <!--&con(flex), a-img-->
 
-    <div class="container d-flex justify-content-around align-items-center py-5 flex-wrap">
+    <div class="container d-flex justify-content-around align-items-center py-5 flex-wrap gap-2">
         <a href="https://www.google.com/" target="_blank"><img src="./img/google-logo.png" alt="" width="100px"></a>
         <a href="https://www.ibm.com/" target="_blank"><img src="./img/ibm-logo.png" alt="" width="100px"></a>
         <a href="https://www.amazon.com/" target="_blank"><img src="./img/amazon-logo.png" alt="" width="100px"></a>
@@ -266,38 +253,43 @@
 
     </div>
 
-    <form action="submit_form.php" method="POST">
-        <div class="row ">
-            <div class="col-md-6 col-sm-12"> <!-- d-flex flex-column gap-3 -->
-                <input type="name" class="form-control form-control-lg" id="exampleFormControlInput1"
-                    placeholder="Name">
-                <input type="text" class="form-control form-control-lg mt-3" id="exampleFormControlInput2"
-                    placeholder="E-mail">
-                <input type="tel" class="form-control form-control-lg mt-3" id="exampleFormControlInput3"
-                    placeholder="Phone Number">
-            </div>
-            <div class="col-md-6 col-sm-12">
-                <textarea class="form-control form-control-lg" id="exampleFormControlTextarea1" rows="6"></textarea>
-            </div>
+    <!--! CONTACT US -->
+
+    <div class="container-fluid contact text-center py-5 text-white" id="contactus">
+        <h1 class="display-3"> Contact us</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt, velit!</p>
+        <div class="container">
+            <form action="submit_form.php" method="POST">
+                <div class="row ">
+                    <div class="col-md-6 col-sm-12">
+                        <input type="name" class="form-control form-control-lg" id="exampleFormControlInput1"
+                            placeholder="Name">
+                        <input type="text" class="form-control form-control-lg mt-3" id="exampleFormControlInput2"
+                            placeholder="E-mail">
+                        <input type="tel" class="form-control form-control-lg mt-3" id="exampleFormControlInput3"
+                            placeholder="Phone Number">
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <textarea class="form-control form-control-lg" id="exampleFormControlTextarea1"
+                            rows="6"></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-danger btn-lg mt-3">Send Message</button>
+            </form>
         </div>
-        <button type="submit" class="btn btn-danger btn-lg mt-3">Send Message</button>
-    </form>
+    </div>
 
+    <!--! All Rights Reserved © 2024 -->
 
+    <div class="py-5 text-center">
+        All Rights Reserved © 2024
+    </div>
 
+    <!--! BOOTSTRAP JS -->
 
-
-
-
-
-
-
-
-    Message me_02_night-coders
-
-
-
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
