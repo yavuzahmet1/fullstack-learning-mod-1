@@ -14,7 +14,7 @@ for (i of h1) {
 
 console.log(title);
 
-// Tabii! NodeList, DOM (Document Object Model) yapısında bir belge içindeki düğümlerin (nodes) bir koleksiyonunu ifade eden bir veri yapısıdır. Genellikle, JavaScript kullanarak DOM'dan eleman seçildiğinde bir NodeList döndürülür.
+// NodeList, DOM (Document Object Model) yapısında bir belge içindeki düğümlerin (nodes) bir koleksiyonunu ifade eden bir veri yapısıdır. Genellikle, JavaScript kullanarak DOM'dan eleman seçildiğinde bir NodeList döndürülür.
 // NodeList, bir belge içindeki düğümlerin sıralı bir listesini içerir. Bu düğümler element, text, comment veya diğer düğüm türlerinden biri olabilir.
 // Statik NodeList: Belirli bir zamanda alınır ve DOM'daki değişikliklerden etkilenmez. Örneğin, document.querySelectorAll() metodu genelde statik bir NodeList döndürür.
 // Canlı NodeList: DOM'daki değişikliklere dinamik olarak yanıt verir. Örneğin, document.getElementsByClassName() ile elde edilen bir NodeList canlıdır.
