@@ -10,6 +10,7 @@
     text-decoration: none;
     /* font-family: "Poppins", serif; */
     font-family: "Yeseva One", serif;
+
 }
 
 :root {
@@ -247,4 +248,110 @@ search-box input::placeholder {
     background: var(--main-color);
     color: var(--bg-color);
     transition: 0.2s all linear;
+}
+
+.customer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.customer-container .card {
+    padding: 20px;
+    box-shadow: var(--box-shadow);
+    border-radius: 0.5rem;
+    text-align: center;
+    overflow: hidden !important;
+
+}
+
+.stars .bx {
+    color: var(--main-color);
+}
+
+.customer-container .card p {
+    font-size: 0.9rem;
+}
+
+.customer-container .card h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0.5rem 0 0.5rem;
+}
+
+.customer-container .card img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 30%;
+}
+
+.customer-container .card:hover {
+    background: var(--second-color);
+    transition: 0.2s all linear;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+    align-items: center;
+    gap: 1.5rem;
+
+}
+
+.footer-box h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.footer-box p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.social {
+    display: flex;
+    column-gap: 0.5rem;
+}
+
+.social a .bx {
+    font-size: 24px;
+    color: var(--text-color);
+    padding: 10px;
+    background: var(--second-color);
+    border-radius: 0.2rem;
+}
+
+.social a .bx:hover {
+    background: var(--main-color);
+    color: var(--bg-color);
+}
+
+.footer-box .contact {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+
+.contact span {
+    display: flex;
+    align-items: center;
+}
+
+.contact i {
+    font-size: 20px;
+    margin-right: 1rem;
+}
+
+.footer-box li a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.footer-box li a:hover {
+    color: var(--main-color);
 }
