@@ -1,0 +1,9 @@
+:root {
+    --bg-btn-color: rgb(102, 99, 99);
+    --text-color-w: white;
+}
+
+button {
+    background: var(--bg-btn-color) !important;
+    color: var(--text-color-w) !important;
+}
