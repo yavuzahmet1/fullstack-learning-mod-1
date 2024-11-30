@@ -46,7 +46,12 @@ header {
     align-items: center;
     padding: 18px 100px;
     transition: 0.5s linear;
+
+}
+
+header.shadow {
     background: var(--text-color);
+    box-shadow: var(--box-shadow);
 }
 
 .logo img {
@@ -260,7 +265,7 @@ search-box input::placeholder {
 
 .customer-container .card {
     padding: 20px;
-    box-shadow: var(--box-shadow);
+    box-shadow: var(--box-shadow) !important;
     border-radius: 0.5rem;
     text-align: center;
     overflow: hidden !important;
@@ -354,4 +359,117 @@ search-box input::placeholder {
 
 .footer-box li a:hover {
     color: var(--main-color);
+}
+
+.copyright {
+    padding: 20px;
+    text-align: center;
+    background-color: var(--second-color);
+}
+
+@media (max-width:1058px) {
+    header {
+        padding: 16px 60px;
+    }
+
+    section {
+        padding: 50px 60px;
+    }
+
+    .home-txt h1 {
+        font-size: 2.4rem;
+    }
+}
+
+@media (max-width:991px) {
+    header {
+        padding: 16px 40px;
+    }
+
+    section {
+        padding: 50px 4%;
+    }
+
+    .home-txt h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width:768px) {
+    header {
+        padding: 12px 4%;
+    }
+
+    #menu-icon {
+        display: initial;
+    }
+
+    .navbar {
+        position: absolute;
+        top: -570px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: var(--second-color);
+        row-gap: 1.4rem;
+        padding: 20px;
+        transition: 0.3s;
+        text-align: center;
+    }
+
+    .navbar a {
+        color: var(--text-color);
+    }
+
+    .navbar a:hover {
+        color: var(--bg-color);
+    }
+
+    .navbar.active {
+        top: 100%
+    }
+
+    .about {
+        align-items: center;
+    }
+}
+
+@media (max-width:360px) {
+    header {
+        padding: 11px 4%;
+    }
+
+    .logo {
+        width: 45px;
+    }
+
+    .home-text {
+        padding-top: 15px;
+    }
+
+    .home-text h1 {
+        font-size: 1.4rem !important;
+    }
+
+    .home-text p {
+        font-size: 0.8rem;
+        font-weight: 300;
+    }
+
+    .about-img {
+        order: 2;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+
+    .about-text h2 {
+        font-size: 1.2rem;
+    }
+
+    .heading h2 {
+        font-size: 1.2rem;
+    }
 }
