@@ -13,6 +13,7 @@ function update(message, color = "black", fontSize = "35px") {
     game.resultE.style.color = color;
     game.resultE.style.fontSize = fontSize;
     game.resultE.innerHTML = message;
+    game.count++;
 }
 
 game.sendE.onclick = function () {
@@ -32,7 +33,17 @@ game.sendE.onclick = function () {
     }
     else if (n > game.secret) {
         game.maxNum = n
-        update(`Guess a smaller number from ${game.minNum} to ${game.maxNum}. You habve`);
-        count++;
+        update(`Guess a smaller number from ${game.minNum} to ${game.maxNum}. You have`);
+
     }
+    game.guessE.value = "";
+
+    game.guessE.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+            game.sendE.click(); // Send butonunun click olayını tetikler
+        }
+    });
 }
+
+
+
