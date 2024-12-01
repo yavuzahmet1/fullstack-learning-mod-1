@@ -2,7 +2,7 @@
 
 ### Amaç:
 
-- Bu görevin amacı, öğrendiklerinizi pekiştirmek. JS DOM kullanarak verilen html yapısını aşağıdaki adımlarla modifiye etmeniz beklenmektedir. HTML Çıktısının şuanki hali ve JS eklendikten sonraki örnek yapısı aşağıdaki resimlerde verilmiştir.
+- Bu görevin amacı, öğrendiklerinizi pekiştirmek. JS DOM kullanarak verilen html yapısını aşağıdaki adımlarla modifiye etmemiz beklenmektedir. 
 
 ### img
 ![Before](./image.png)
