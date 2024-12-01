@@ -8,10 +8,9 @@
 ![Before](./image.png)
 
 ### Demo
-[Live](https://anthonyins.github.io/js-dom-ass1/)
+[Live](https://yavuzahmet1.github.io/fullstack-clarusway/frontend/homeworks/14-DOM-assignment/)
 
 ### Adımlar:
-
 
 1. ilk önce boostrap eklentisi alındı ve js tarafında tek tek ilgili element oluşturularak gerekli tanımlamaları yapıldı.
 
