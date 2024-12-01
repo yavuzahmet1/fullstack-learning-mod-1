@@ -7,3 +7,25 @@ button {
     background: var(--bg-btn-color) !important;
     color: var(--text-color-w) !important;
 }
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+    justify-content: space-around;
+    gap: 5px;
+}
+
+.card-left {
+    position: relative;
+    width: 400px;
+
+}
+
+.left-btn {
+    background-color: dodgerblue !important;
+    border: none;
+    position: absolute;
+    left: 15%;
+    top: 50%;
+    z-index: 1000;
+}
