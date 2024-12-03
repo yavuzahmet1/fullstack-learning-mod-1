@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #212529;
+    color: white;
+    padding: 25px 60px;
+    margin-bottom: 1rem;
+}
+
+.cart {
+    position: relative;
+    background-color: #fff;
+    color: #212529;
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 4px;
+
+}
+
+.cart-amount {
+    position: absolute;
+    top: -15px;
+    right: -8px;
+    font-size: 16px;
+    background-color: red;
+    color: white;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+.shop {
+    display: grid;
+    grid-template-columns: repeat(4, 223px);
+    justify-content: center;
+    gap: 1rem;
+
+}
+
+@media (max-width:1000px) {
+    .shop {
+        grid-template-columns: repeat(2, 223px);
+    }
+}
+
+@media (max-width:500px) {
+    .shop {
+        grid-template-columns: repeat(1, 223px);
+    }
+}
+
+.item {
+    border: 1px solid #212529;
+    border-radius: 4px;
+}
+
+.details {
+    padding: 0.3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.price-quantity {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price-quantity .buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.price-quantity .buttons .bi-dash {
+    color: red;
+}
+
+.bi-plus {
+    color: gray;
+}
