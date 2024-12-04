@@ -68,4 +68,74 @@ header ul a:hover {
   transform: scale(0.97);
 }
 
+.cards {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.articles {
+  display: flex;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.article1, .article2 {
+  background-color: gray;
+  width: 50%;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.article2 {
+  background-color: yellow;
+  color: blue;
+}
+
+footer p {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: orange;
+}
+
+.social-icons {
+  display: flex;
+  height: 10rem;
+}
+.social-icons .social1 {
+  width: 20%;
+  background-color: rgb(25.5, 25.5, 255);
+  font-size: 1rem;
+  color: #990000;
+}
+.social-icons .social2 {
+  width: 20%;
+  background-color: #3333ff;
+  font-size: 2rem;
+  color: #55004e;
+}
+.social-icons .social3 {
+  width: 20%;
+  background-color: rgb(76.5, 76.5, 255);
+  font-size: 3rem;
+  color: #0fa8a1;
+}
+.social-icons .social4 {
+  width: 20%;
+  background-color: #6666ff;
+  font-size: 4rem;
+  color: #dcacf1;
+}
+.social-icons .social5 {
+  width: 20%;
+  background-color: rgb(127.5, 127.5, 255);
+  font-size: 5rem;
+  color: #64c217;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -92,3 +92,90 @@ header {
         }
     }
 }
+
+//! CARDS
+
+//* mixins
+
+@mixin mybox($param1, $param2) {
+    background-color: $param1;
+    color: $param2;
+}
+
+.cards {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.card2 {}
+
+.card3 {}
+
+.card4 {}
+
+.card5 {}
+
+//! Articles
+//* Extends
+
+.articles {
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.article1 {
+    background-color: gray;
+    width: 50%;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.article2 {
+    @extend .article1;
+    background-color: yellow;
+    color: blue;
+}
+
+footer {
+    $dark: 1;
+
+    p {
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @if $dark==1 {
+            background-color: orange;
+        }
+
+        @else if $dark==2 {
+            background-color: maroon;
+        }
+
+        @else {
+            bacground-color: olive;
+        }
+    }
+}
+
+.social-icons {
+    display: flex;
+    height: 10rem;
+    $textColor: #990000, #55004e, #0fa8a1, #dcacf1, #64c217;
+
+
+    @for $i from 1 through 5 {
+        .social#{$i} {
+            width: 20%;
+            background-color: lighten(blue, $i * 5);
+            font-size: 1rem * $i;
+            color: nth($textColor , $i );
+        }
+    }
+}
