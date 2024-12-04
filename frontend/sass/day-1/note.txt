@@ -1,0 +1,26 @@
+SASS, Syntactically Awesome Style Sheets(Sözdizimsel Müthiş Stil Sayfaları) 
+ifadesinin kısaltılmış halidir. En çok kullanılan CSS ön-işlemcilerinden biridir.
+
+ Değişkenler (Variables)
+CSS’de değişken kullanımına olanak sağlar, 
+en kullanışlı özelliklerden biridir. 
+Aşağıda göstermiş olduğum şekilde başına $ işareti koymamız 
+değişken olduğunu ifade etmek içindir.
+
+SASS:
+
+$general-font: "Helvetica, sans-herif";
+$my-color: #a5a5a5;
+p {
+font-family: $general-font;
+color: $my-color;
+}
+CSS Çıktısı:
+
+p {
+font-family: "Helvetica, sans-herif;
+color: #a5a5a5;
+}
+Bu şekilde ,tanımlamış olduğumuz değişkenleri istediğimiz yerde kullanabiliriz. 
+Değişken tanımladığımız yerde yaptığımız küçük bir değişiklik ile yazılan 
+tüm koda etki edilebilir.
