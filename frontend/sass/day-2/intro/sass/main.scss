@@ -1,0 +1,18 @@
+//abstracts
+@import './abstract/mixins';
+@import './abstract/variables';
+
+//base
+@import './base/reset';
+
+//components
+@import './components/footer';
+@import './components/nav';
+@import './components/responsive';
+
+//pages
+
+@import './pages/about';
+@import './pages/contact';
+@import './pages/home';
+@import './pages/projects';
