@@ -1,5 +1,8 @@
+@use'../abstract/mixins';
+@use'../abstract/variables';
+
 .contact-bgImg-container {
-    @include bgImg(100vh, $pathName1);
+    @include mixins.bgImg(100vh, variables.$pathName1);
 
     .nav {
 
@@ -32,7 +35,7 @@
     }
 
     .text-secondary {
-        color: $secondary-color;
+        color: variables.$secondary-color;
     }
 }
 

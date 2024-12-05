@@ -1,10 +1,12 @@
+@use '../abstracts/variables';
+
 .link-style {
     a {
         padding: 0.4rem;
         @include soft(0.7s);
 
         &:hover {
-            color: $secondary-color;
+            color: variables.$secondary-color;
         }
     }
 }
