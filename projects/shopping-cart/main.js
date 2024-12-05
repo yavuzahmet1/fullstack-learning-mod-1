@@ -31,27 +31,73 @@ let shopItemsData = [
         img: "img/img-4.jpg"
     }
 ];
-
+let basket = [];
 
 let generateShop = () => {
 
     return (shop.innerHTML = shopItemsData.map(item => {
-        return `<div class="item">
-                     <img width="220px" src="${item.img}" alt="">
+        let { id, name, price, desc, img } = item;//destructuring
+
+        return `<div id=product-id-${id} class="item">
+                     <img width="220px" src=${img} alt="">
                  <div class="details">
-                        <h3>${item.name}</h3>
-                        <p>${item.desc}</p>
+                        <h3>${name}</h3>
+                        <p>${desc}</p>
                         <div class="price-quantity">
-                             <h2>${item.price}</h2>
+                             <h2>${price}</h2>
                              <div class="buttons">
-                                 <i class="bi bi-dash"></i>
-                                 <div class="quantity">0</div>
-                                 <i class="bi bi-plus"></i>
+                                 <i onclick="decrement(${id})" class="bi bi-dash"></i>
+                                  <div id=${id} class="quantity">0</div>
+                                 <i onclick="increment(${id})" class="bi bi-plus"></i>
                            </div>
                          </div>
                      </div>
                  </div>`
-    }))
+    }).join(""));
 }
 
+// .join(""):
+// map fonksiyonu, her bir öğe için bir HTML dizesi döndürür 
+// ve bu diziler bir dizi (array) olarak tutulur. 
+// Ancak, HTML'in düzgün bir şekilde yerleştirilebilmesi 
+// için bu diziyi tek bir string'e dönüştürmek gerekir.
+// join("") fonksiyonu, map tarafından döndürülen dizi 
+// öğelerini birleştirir. Buradaki "" parametresi, 
+// öğelerin arasına herhangi bir karakter (boşluk, virgül vb.) 
+// eklenmeden birleştirilmesini sağlar. Bu sayede, 
+// HTML şablonları birbirine eklenmiş olur.
+
+//quantity e, id vermemizin nedeni sayıyı arttırınca 
+//hedeflediğimiz id ye ait objenin sayını arttıracağız
+
 generateShop()
+
+let increment = (id) => {
+    let selectedItem = id;
+    let search = basket.find(product => product.id === selectedItem.id);
+    if (search === undefined) {
+        basket.push({ id: selectedItem.id, item: 1 })
+    } else {
+        search.item += 1;
+    }
+    update(selectedItem.id)
+
+};
+let decrement = (id) => {
+    let selectedItem = id;
+    let search = basket.find(product => product.id === selectedItem.id);
+    if (search.item === 0) return;
+    else {
+        search.item -= 1;
+    }
+    console.log(basket);
+    update(selectedItem.id)
+};
+let update = (id) => {
+    let search = basket.find((x) => x.id === id)
+    console.log(search.item);
+    document.getElementById(id).innerHTML = search.item
+    document.querySelector(".cart-amount").innerHTML = basket.length
+};
+
+1.28.00
