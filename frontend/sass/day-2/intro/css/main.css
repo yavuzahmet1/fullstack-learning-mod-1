@@ -5,11 +5,11 @@
   box-sizing: border-box;
 }
 
-.link-style a, footer.horizontal a {
+.link-style a, footer.vertical .social-icons a, footer.horizontal a {
   padding: 0.4rem;
   transition: all 0.7s;
 }
-.link-style a:hover, footer.horizontal a:hover {
+.link-style a:hover, footer.vertical .social-icons a:hover, footer.horizontal a:hover {
   color: #ff652f;
 }
 
@@ -19,6 +19,26 @@ footer.horizontal {
   justify-content: space-between;
   align-items: flex-end;
   padding: 1rem;
+}
+
+footer.vertical {
+  border: 2px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 1rem;
+}
+footer.vertical .social-icons {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 1rem;
+}
+footer.vertical .copyright {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  writing-mode: vertical-lr;
 }
 
 .nav {
@@ -46,6 +66,49 @@ footer.horizontal {
 }
 .nav__link--active {
   color: orange;
+}
+
+.about-bgImg-container {
+  height: 50vh;
+  width: 100%;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/project-1.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.about-bgImg-container .about__bio-image {
+  text-align: center;
+}
+.about-bgImg-container .about__bio-image h2 {
+  font-size: 3rem;
+  color: #ff652f;
+}
+.about-bgImg-container .about__bio-image p {
+  font-size: 1.2rem;
+  line-height: 1.3rem;
+  margin: 1.5rem;
+}
+
+.about {
+  width: 70%;
+  margin: 2rem auto;
+}
+.about__job {
+  border: 2px solid red;
+  margin: 1rem;
+  background-color: rgb(64.5, 64.5, 64.5);
+  padding: 1rem;
+  border-bottom: 5px solid #ff652f;
+  border-radius: 5px;
+}
+.about__job h2,
+.about__job h3 {
+  margin: 0.5rem 0;
+}
+.about__job h6 {
+  margin: 0.3rem 0;
 }
 
 .home-bg-Img-container {
