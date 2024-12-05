@@ -1,0 +1,3 @@
+@mixin soft($sec) {
+    transition: all $sec;
+}

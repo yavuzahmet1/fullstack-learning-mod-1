@@ -1,3 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
+.nav {
+  height: 10vh;
+  padding: 1rem;
+}
+.nav__list {
+  list-style-type: none;
+  text-align: right;
+}
+.nav__item {
+  display: inline;
+  padding: 1rem;
+}
+.nav__link {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  transition: all 0.5s;
+}
+.nav__link:hover {
+  color: blue;
+}
+.nav__link--active {
+  color: orange;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #272727;
+  height: 100vh;
+  line-height: 1;
+  color: #fff;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 400;
+}
 
 /*# sourceMappingURL=main.css.map */
