@@ -1,0 +1,42 @@
+//*****************************************************
+//*   NAV
+//*****************************************************
+
+@use '../abstracts/mixins';
+@use '../abstracts/variables';
+
+
+
+.nav{
+    // border: 2px solid red;
+    height: 10vh;
+    padding: 1rem;
+
+    &__list{
+        list-style-type: none;
+        text-align: right;
+    }
+
+    &__item{
+        display: inline;
+        padding: 1rem;
+    }
+
+    &__link{
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 1.3rem;
+        font-family: variables.$font-family;
+        font-weight: 500;
+        @include mixins.soft(0.5s);
+    
+        &:hover{
+            color: blue;
+        }
+        &--active{
+            color: variables.$secondary-color;
+        }
+
+    }
+}
+

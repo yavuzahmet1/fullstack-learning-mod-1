@@ -1,0 +1,33 @@
+//*****************************************************
+//*   HOME PAGE
+//*****************************************************
+
+
+@use '../abstracts/mixins';
+@use '../abstracts/variables';
+
+.home-bgImg-container{
+    @include mixins.bgImg(100vh, variables.$pathName1);
+}
+
+.home{
+    // border: 2px solid red;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    &__name{
+        font-size: 5rem;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+        border-bottom: 2px solid variables.$text-color;
+        width: 100%;
+        &--last{
+            color:red;
+            font-weight: 700;
+        }
+
+    }
+}
