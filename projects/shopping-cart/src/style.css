@@ -9,6 +9,10 @@ body {
 
 }
 
+i {
+    cursor: pointer;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
