@@ -4,31 +4,31 @@ let shop = document.getElementById("shop");
 let shopItemsData = [
     {
         id: "jfhgbvnscs",
-        name: "Casual Shirt",
-        price: 45,
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing.",
-        img: "img/img-1.jpg"
+        name: "Vision Mont",
+        price: 35,
+        desc: "LCW Vision Siyah Slim Fit Dik Yaka Erkek Deri Görünümlü Mont",
+        img: "img/mont-man.webp"
     },
     {
         id: "ioytrhndcv",
-        name: "Office Shirt",
-        price: 100,
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing.",
-        img: "img/img-2.jpg"
+        name: "Gomlek Suet",
+        price: 40,
+        desc: "Kahverengi Standart Kalıp Gömlek Yaka Süet Erkek Mont",
+        img: "img/gomle-suet_a.webp"
     },
     {
         id: "wuefbncxbsn",
-        name: "T Shirt",
-        price: 25,
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing.",
-        img: "img/img-3.jpg"
+        name: "Kaban",
+        price: 170,
+        desc: "Hatemoğlu Gri Slim Fit Düz Hakim Yaka Kürklü Kapüşonlu Kaban",
+        img: "img/kurklu-kaban.webp"
     },
     {
         id: "thyfhcbcv",
-        name: "Mens Suit",
-        price: 300,
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing.",
-        img: "img/img-4.jpg"
+        name: "Kadın Ev Çorabı",
+        price: 5,
+        desc: "Bej Yılbaşı Temalı Kadın Ev Çorabı.",
+        img: "img/ev-corabi.webp"
     }
 ];
 let basket = JSON.parse(localStorage.getItem("data")) || []
