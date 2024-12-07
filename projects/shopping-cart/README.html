@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Al&imath;&scedil;veri&scedil; Sepeti Uygulamas&imath;</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+<link href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <h1 id="alışveriş-sepeti-uygulaması">Alışveriş Sepeti Uygulaması</h1>
+<p>Bu proje, bir alışveriş sepeti uygulamasının temel özelliklerini içeren bir web uygulamasıdır. Kullanıcılar ürünleri görüntüleyebilir, sepete ekleyebilir, çıkarabilir ve toplam miktarı görebilir.</p>
+<h2 id="özellikler">Özellikler</h2>
+<ul>
+<li>Ürünlerin bir listesi dinamik olarak oluşturulur.</li>
+<li>Sepete ürün ekleme ve çıkarma işlevselliği.</li>
+<li>Sepetteki toplam ürün miktarını gösteren bir gösterge.</li>
+<li><strong>localStorage</strong> kullanılarak sepet verilerinin tarayıcıda saklanması.</li>
+</ul>
+<h2 id="kullanılan-teknolojiler">Kullanılan Teknolojiler</h2>
+<ul>
+<li><strong>HTML</strong>: Uygulamanın temel yapısı.</li>
+<li><strong>CSS</strong>: Görsel düzenlemeler.</li>
+<li><strong>JavaScript</strong>: Dinamik içerik oluşturma ve kullanıcı etkileşimlerinin yönetimi.</li>
+<li><strong>localStorage</strong>: Kullanıcı verilerinin tarayıcıda saklanması.</li>
+</ul>
+<h2 id="proje-dosya-yapısı">Proje Dosya Yapısı</h2>
+<h3 id="map-metodu"><strong><code>map</code> Metodu</strong></h3>
+<h4 id="nedir">Nedir?</h4>
+<ul>
+<li><strong><code>map</code></strong>, bir dizi üzerinde çalışarak her bir eleman için belirli bir işlem uygular ve işlemin sonucunda <strong>yeni bir dizi</strong> döner.</li>
+<li>Orijinal dizi değişmez, sadece dönüş değerine göre yeni bir dizi oluşturulur.</li>
+<li></li>
+</ul>
+<h4 id="kodda-kullanımı">Kodda Kullanımı</h4>
+<pre><code class="language-javascript">shopItemsData.<span class="hljs-title function_">map</span>(<span class="hljs-function"><span class="hljs-params">item</span> =&gt;</span> {
+    <span class="hljs-keyword">let</span> { id, name, price, desc, img } = item; <span class="hljs-comment">// Destructuring</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-string">`&lt;div id=product-id-<span class="hljs-subst">${id}</span> class=&quot;item&quot;&gt;...&lt;/div&gt;`</span>;
+}).<span class="hljs-title function_">join</span>(<span class="hljs-string">&quot;&quot;</span>);
+
+####<span class="hljs-title class_">Neden</span> <span class="hljs-title class_">Kulland</span>ık?
+-Ürün <span class="hljs-title class_">Kartlar</span>ı <span class="hljs-title class_">Olu</span>ş<span class="hljs-attr">turmak</span>: map metodu, her bir ürün iç<span class="hljs-keyword">in</span> dinamik bir <span class="hljs-variable constant_">HTML</span> şablonu oluşturuyor.
+-<span class="hljs-title class_">Dinamik</span> ve Kısa <span class="hljs-title class_">Kod</span>: <span class="hljs-title class_">Her</span> ürünü manuel olarak <span class="hljs-variable constant_">HTML</span> içinde yazmak yerine, map ile tüm ürünleri döngüyle işler ve daha az kod yazarız.
+-<span class="hljs-title class_">Kolay</span> Yö<span class="hljs-attr">netim</span>: Ürün bilgilerini bir dizi (shopItemsData) içinde tutarak, listeyi sadece veriyi değiştirerek güncelleyebiliriz.
+
+### **<span class="hljs-string">`reduce`</span> <span class="hljs-title class_">Metodu</span>**
+####<span class="hljs-title class_">Neden</span> <span class="hljs-title class_">Kulland</span>ık?
+-<span class="hljs-title class_">Toplam</span> Ürün <span class="hljs-title class_">Say</span>ısını <span class="hljs-title class_">Hesaplamak</span>:
+-basket.<span class="hljs-title function_">map</span>(<span class="hljs-function"><span class="hljs-params">x</span> =&gt;</span> x.<span class="hljs-property">item</span>): <span class="hljs-title class_">Sepetteki</span> ürünlerin yalnızca item (miktar) bilgilerini içeren bir dizi oluşturur.
+-<span class="hljs-title function_">reduce</span>(<span class="hljs-function">(<span class="hljs-params">x, y</span>) =&gt;</span> x + y, <span class="hljs-number">0</span>): <span class="hljs-title class_">Bu</span> dizi üzerinde toplam işlemini gerçekleştirir.
+-<span class="hljs-title class_">Dinamik</span> ve Gü<span class="hljs-attr">venilir</span>: <span class="hljs-title class_">Yeni</span> ürün eklenip çıkarıldığında, sepet miktarını hesaplamak iç<span class="hljs-keyword">in</span> tek bir fonksiyon yeterlidir.
+
+####<span class="hljs-title class_">Neden</span> <span class="hljs-title class_">Bu</span> İkisi?
+###<span class="hljs-attr">map</span>:
+-Görsel içerik oluşturmak iç<span class="hljs-keyword">in</span> ideal (<span class="hljs-variable constant_">HTML</span> şablonları, veri listeleri vb.).
+-<span class="hljs-title class_">Diziden</span>, üzerinde işlem yapılmış başka bir dizi üretir.
+####<span class="hljs-attr">reduce</span>:
+-<span class="hljs-title class_">Diziden</span> tek bir sonuç üretmek (örneğ<span class="hljs-keyword">in</span> toplam, çarpım, maksimum değer vb.) iç<span class="hljs-keyword">in</span> kullanılır.
+-<span class="hljs-title class_">Sepetteki</span> ürün miktarını toplamak gibi bir durumda çok faydalıdır.
+
+####<span class="hljs-title class_">Nas</span>ıl Çalıştırılır?
+-<span class="hljs-title class_">Bu</span> projeyi bilgisayarınıza indirin veya klonlayı<span class="hljs-attr">n</span>:
+-git clone <span class="hljs-attr">https</span>:<span class="hljs-comment">//github.com/kullaniciadi/proje-ismi.git</span>
+
+
+</code></pre>
+
+            <script async src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script>
+            
+        </body>
+        </html>

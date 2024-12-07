@@ -2,6 +2,8 @@
 
 Bu proje, bir alışveriş sepeti uygulamasının temel özelliklerini içeren bir web uygulamasıdır. Kullanıcılar ürünleri görüntüleyebilir, sepete ekleyebilir, çıkarabilir ve toplam miktarı görebilir.
 
+![Logo](img/picture.gif)
+
 ## Özellikler
 
 - Ürünlerin bir listesi dinamik olarak oluşturulur.
