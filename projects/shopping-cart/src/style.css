@@ -22,6 +22,11 @@ i {
     margin-bottom: 1rem;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 .cart {
     position: relative;
     background-color: #fff;
@@ -93,4 +98,70 @@ i {
 
 .bi-plus {
     color: gray;
+}
+
+/* Style button for cart.html */
+
+.text-center {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.home-btn {
+    background-color: #212529;
+    color: white;
+    border: none;
+    padding: 6px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.bi-x-circle {
+    color: red;
+    font-weight: bold;
+
+}
+
+/* style rules for shopping cart  */
+
+.shopping-cart {
+    display: grid;
+    grid-template-columns: repeat(1, 320px);
+    justify-content: center;
+    gap: 15px;
+}
+
+/* style rules for shopping item  */
+
+.cart-item {
+    border: 2px solid #212529;
+    box-shadow: 15px 9px 11px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+}
+
+.title-price-x {
+    width: 190px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart-item-price {
+    background-color: #212529;
+    color: white;
+    border-radius: 5px;
+    padding: 3px 5px;
+}
+
+.buttons-cart {
+    display: flex;
+    gap: 5px;
+    margin: 10px 0;
+    font-weight: bold;
 }
