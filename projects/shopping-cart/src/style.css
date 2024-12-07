@@ -107,13 +107,24 @@ a {
     margin-bottom: 20px;
 }
 
-.home-btn {
+.home-btn,
+.checkout,
+.removeAll {
     background-color: #212529;
     color: white;
     border: none;
     padding: 6px;
     cursor: pointer;
     border-radius: 6px;
+}
+
+.checkout {
+    background-color: green;
+
+}
+
+.removeAll {
+    background-color: red;
 }
 
 .bi-x-circle {
