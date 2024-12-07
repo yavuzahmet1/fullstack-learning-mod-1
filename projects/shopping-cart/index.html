@@ -5,14 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="./src/menu-icon.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" href="./img/favi.png" type="image/x-icon">
     <title>Clothing Store</title>
 </head>
 
 <body>
+
     <div id="navbar" class="navbar">
+        <a href="index.html" class="left-icon">
+            <img src="./img/shop-icon.png" width="50px" alt="">
+            <h2 class="text-icon">BitMod</h2>
+        </a>
         <a href="index.html">
-            <h2>Cloathing Store</h2>
+            <h3 class="text-icon">Clothes</h3>
+        </a>
+        <a href="index.html">
+            <h3 class="text-icon">Shoes</h3>
+        </a>
+        <a href="index.html">
+            <h3 class="text-icon">Books</h3>
         </a>
         <a href="cart.html">
             <div class="cart">
@@ -20,17 +33,14 @@
                 <div id="cart-amount" class="cart-amount">0</div>
             </div>
         </a>
-
     </div>
+    <div class="banner"></div>
 
     <div class="shop" id="shop">
-
     </div>
 
     <script src="./src/data.js"></script>
     <script src="./src/main.js"></script>
-
-
 </body>
 
 </html>

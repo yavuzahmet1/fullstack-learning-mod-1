@@ -179,3 +179,17 @@ a {
     margin: 10px 0;
     font-weight: bold;
 }
+
+.left-icon {
+    display: flex;
+    gap: 5px;
+}
+
+.text-icon {
+    display: flex;
+    align-items: center;
+}
+
+footer {
+    background-color: var(--primary-color);
+}

@@ -253,10 +253,3 @@ label {
     filter: grayscale(100);
     border-radius: 20px;
 }
-
-
-/*! Footer */
-
-footer {
-    background-color: var(--primary-color);
-}
