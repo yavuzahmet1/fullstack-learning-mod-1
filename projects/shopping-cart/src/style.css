@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -5,7 +7,8 @@
 }
 
 body {
-    font-family: sans-serif;
+    /* font-family: "Parkinsans", sans-serif; */
+    font-family: "Playfair Display", serif;
 
 }
 

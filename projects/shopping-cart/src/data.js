@@ -24,7 +24,7 @@ let shopItemsData = [
         id: "thyfhcbcv",
         name: "Kadın Ev Çorabı",
         price: 5,
-        desc: "Bej Yılbaşı Temalı Kadın Ev Çorabı.",
+        desc: "Bej Yılbaşı Temalı Kadın Ev Çorabı. Yılbaşınızı sizde sıcak geçirin.",
         img: "img/ev-corabi.webp"
     }
 ];
