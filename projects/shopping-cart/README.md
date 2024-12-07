@@ -2,7 +2,7 @@
 
 Bu proje, bir alışveriş sepeti uygulamasının temel özelliklerini içeren bir web uygulamasıdır. Kullanıcılar ürünleri görüntüleyebilir, sepete ekleyebilir, çıkarabilir ve toplam miktarı görebilir.
 
-<img src="img/picture.gif" alt="Logo" width="500px" height="500px">
+<img src="img/picture.gif" alt="Logo" width="500px" height="250px">
 ![Logo](img/picture.gif)
 
 ## Özellikler
