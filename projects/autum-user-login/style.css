@@ -41,12 +41,12 @@ body {
 .bisiklet {
     position: absolute;
     left: -5%;
-    top: 15%;
+    top: 25%;
     transform: rotateY(180deg);
 }
 
 .bisiklet img {
-    width: 250px;
+    width: 350px;
     height: auto;
     animation-name: action;
     animation-duration: 10s;
