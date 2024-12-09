@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.players {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#resultDisplay {
+    color: red;
+    font-size: 4rem;
+}
+
+.showScreen {
+    width: 500px;
+}
