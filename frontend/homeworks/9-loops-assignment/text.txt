@@ -1,0 +1,29 @@
+acc[char] = (acc[char] || 0) + 1 ifadesi, bir karakterin (örneğin bir sesli harf) sayaç değerini güncellemek için kullanılır. Bu kod satırını adım adım inceleyelim:
+
+acc[char]:
+
+acc bir nesne (JavaScript'te bir "accumulator", yani toplama aracı). Bu nesne, sesli harflerin kaç kez geçtiğini saklar.
+char, o sıradaki karakteri ifade eder. Örneğin, kelimede bir a bulunduğunda, acc['a'] o harfin sayısını temsil eder.
+acc[char] || 0:
+
+acc[char] kontrol edilir. Eğer acc nesnesinde char anahtarı varsa, değeri alınır.
+Eğer acc[char] tanımsız (undefined) ise 0 kullanılır. Bu, ilk kez karşılaşılan bir harfin sayacını sıfırdan başlatmak için gereklidir.
++ 1:
+
+Harfin sayaç değerini 1 artırır. Bu, harfin kaç kez görüldüğünü izlememizi sağlar.
+Sonuç:
+
+acc[char] anahtarı güncellenir ve sayacı 1 artırılır.
+Örnek:
+Diyelim ki acc = {} (boş bir nesne) ve char = 'a'.
+acc[char] henüz tanımlı değil, bu yüzden acc['a'] undefined.
+(acc[char] || 0) ifadesi 0 döner.
+0 + 1 = 1 hesaplanır.
+acc['a'] = 1 olur.
+Bir sonraki kez 'a' harfi geldiğinde:
+
+acc['a'] artık 1.
+(acc[char] || 0) ifadesi bu sefer 1 döner.
+1 + 1 = 2 hesaplanır.
+acc['a'] = 2 olur.
+Bu sayede her harf için sayaç güncellenir.

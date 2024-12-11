@@ -140,4 +140,18 @@ function fibo(number) {
 }
 fibo(5);
 
-//? 10-Kullanıcının girdiği bir kelimenin içindeki sesli harfleri bulup, her birinin sayısını gösteren bir program yazın.
+//? 10-Kullanıcının girdiği bir kelimenin içindeki sesli harfleri bulup, her birinin 
+// sayısını gösteren bir program yazın.
+
+let sesli = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
+let cumle = `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+Illum eos commodi nesciunt modi delectus? Praesentium alias porro voluptatum blanditiis architecto!`;
+
+const toplamSesli = cumle.split("").reduce((total, item) => {
+    if (sesli.includes(item)) {
+        total[item] = (total[item] || 0) + 1;
+    }
+    return total;
+}, []);
+
+console.log(toplamSesli);
