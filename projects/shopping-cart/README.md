@@ -27,9 +27,9 @@ Bu proje, bir alışveriş sepeti uygulamasının temel özelliklerini içeren b
 # Kodda Kullanımı
 javascript
 shopItemsData.map(item => {
-    let { id, name, price, desc, img } = item; // Destructuring
-    return `<div id=product-id-${id} class="item">...</div>`;
-}).join("");
+   - let { id, name, price, desc, img } = item; // Destructuring
+   - return `<div id=product-id-${id} class="item">...</div>`;
+}).join("");// joini mutlaka kullanın yoksa benim gibi günlerce süren düşünme sürecine girebilirsiniz : ), karşılaştığım hata dizi aralarına , işretini koyuyor ve cart boşluğu kaplayacak kadar virgül koyuyor.
 
 #Neden Kullandık?
 -Ürün Kartları Oluşturmak: map metodu, her bir ürün için dinamik bir HTML şablonu oluşturuyor.
@@ -43,16 +43,13 @@ shopItemsData.map(item => {
 -reduce((x, y) => x + y, 0): Bu dizi üzerinde toplam işlemini gerçekleştirir.
 -Dinamik ve Güvenilir: Yeni ürün eklenip çıkarıldığında, sepet miktarını hesaplamak için tek bir fonksiyon yeterlidir.
 
-#Neden Bu İkisi?
+##Neden Bu İkisi?
 -**map**:
--Görsel içerik oluşturmak için ideal (HTML şablonları, veri listeleri vb.).
--Diziden, üzerinde işlem yapılmış başka bir dizi üretir.
--**reduce**:
--Diziden tek bir sonuç üretmek (örneğin toplam, çarpım, maksimum değer vb.) için kullanılır.
--Sepetteki ürün miktarını toplamak gibi bir durumda çok faydalıdır.
+--Görsel içerik oluşturmak için ideal (HTML şablonları, veri listeleri vb.).
+--Diziden, üzerinde işlem yapılmış başka bir dizi üretir.
+--**reduce**:
+--Diziden tek bir sonuç üretmek (örneğin toplam, çarpım, maksimum değer vb.) için kullanılır.
+--Sepetteki ürün miktarını toplamak gibi bir durumda çok faydalıdır.
 
-#Nasıl Çalıştırılır?
--Bu projeyi bilgisayarınıza indirin veya klonlayın:
--git clone https://github.com/kullaniciadi/proje-ismi.git
 
 
