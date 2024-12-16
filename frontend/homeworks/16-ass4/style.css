@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 5px 0;
+    background-color: #F9F8FA;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.header .logo-text {
+    font-size: 1.4rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.basket {
+    padding: 10px;
+}
+
+button {
+    height: 2.5rem;
+    width: 6rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    border-radius: 10px !important;
+    color: white;
+}
+
+.all-btn {
+    background-color: #0D6FFC;
+}
+
+.elecronics-btn {
+    background-color: #6D757C;
+}
+
+.sport-btn {
+    background-color: #198754;
+}
+
+.home-btn {
+    background-color: #0CCBF0;
+}
+
+.shop-btn {
+    background-color: #FEC007;
+}
+
+.clothing-btn {
+    background-color: #DD3445;
+}
+
+.basket-btn {
+    position: relative;
+    border: 1px solid red;
+    background-color: #6D757C;
+}
+
+.basket-amount {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    top: 0.5rem;
+    right: 0.5rem;
+    background-color: black;
+    color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid red;
+}
+
+.main-container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    width: 80%;
+    margin: auto;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.search {
+    border-radius: 6px;
+    border: 1px solid gray;
+    height: 2.5rem;
+    width: 20rem;
+
+}
+
+.cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
