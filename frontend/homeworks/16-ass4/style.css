@@ -116,4 +116,105 @@ button {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 1rem;
+}
+
+.card img {
+    object-fit: cover !important;
+    height: 150px !important;
+    margin: 1rem;
+
+}
+
+.card .card-text {
+    font-size: 0.7rem;
+    overflow: hidden;
+    /* Taşan içeriği gizle */
+    text-overflow: ellipsis;
+    /* Taşan kısımda "..." göster */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    /* Maksimum 3 satırda kes */
+    -webkit-box-orient: vertical;
+    line-height: 1.5;
+}
+
+.card .card-title {
+    font-size: 0.9rem;
+}
+
+.card button {}
+
+article {
+    width: 70%;
+    float: left;
+}
+
+aside {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 25%;
+    float: right;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border: 1px solid #ddd;
+    height: 100vh;
+}
+
+.fa-xmark {
+    cursor: pointer;
+    font-size: 2rem;
+
+}
+
+.basket-aside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0.5rem;
+    transition: all 5s ease;
+
+}
+
+.cart-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+
+.buttons-cart {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.details h3 {
+    font-size: 1rem;
+}
+
+.removeAll,
+.remove-product {
+    background-color: red;
+}
+
+.total-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 1rem;
+    border: 1px solid #000;
+}
+
+.total-price h2 {
+    font-size: 1rem;
+}
+
+.total-price button {
+    margin: auto;
 }
