@@ -43,6 +43,8 @@ button {
     font-size: 1rem;
     border-radius: 10px !important;
     color: white;
+    border: none;
+    font-weight: 300;
 }
 
 .all-btn {
@@ -51,6 +53,7 @@ button {
 
 .elecronics-btn {
     background-color: #6D757C;
+    width: 8rem;
 }
 
 .sport-btn {
@@ -71,7 +74,6 @@ button {
 
 .basket-btn {
     position: relative;
-    border: 1px solid red;
     background-color: #6D757C;
 }
 
@@ -87,7 +89,6 @@ button {
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    border: 1px solid red;
 }
 
 .main-container {
