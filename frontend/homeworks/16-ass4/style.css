@@ -162,6 +162,11 @@ aside {
     height: 100vh;
 }
 
+.aside-basket-back {
+    display: flex;
+    justify-content: space-between;
+}
+
 .fa-xmark {
     cursor: pointer;
     font-size: 2rem;
@@ -171,6 +176,7 @@ aside {
 .basket-aside {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     margin: 1rem 0.5rem;
     transition: all 5s ease;
@@ -181,7 +187,7 @@ aside {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid black;
+
 }
 
 .buttons-cart {
