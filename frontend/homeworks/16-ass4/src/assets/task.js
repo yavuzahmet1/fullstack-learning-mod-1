@@ -3,8 +3,16 @@ const aside = document.querySelector(".aside-container");
 const basketBtn = document.querySelector(".basket-btn");
 const cards = document.querySelector(".cards")
 const elecronicsBtn = document.querySelector(".elecronics-btn")
+const filterBtn = document.querySelectorAll(".category-btn")
 const basketAside = document.querySelector(".basket-aside");
-let basket = JSON.parse(localStorage.getItem("data")) || [];
+// let basket = JSON.parse(localStorage.getItem("dataList")) || [];
+
+// elecronicsBtn.addEventListener("click", (e) => {
+//     console.log(e.target.textContent.toLowerCase())
+//     console.log("basket", basket)
+//     showToScreen(basket, e.target.textContent.toLowerCase())
+// });
+
 
 
 window.addEventListener("load", hide(true));
@@ -19,7 +27,7 @@ const getData = async () => {
         }
         const data = await res.json()
         console.log(data)
-
+        localStorage.setItem("dataList", JSON.stringify(data))
         showToScreen(data)
     } catch (error) {
         console.log("Somethin went wrong")
@@ -27,7 +35,19 @@ const getData = async () => {
 }
 getData()
 
+
+
 function showToScreen(getData) {
+    // const reduced = getData.reduce((acc, product) => {
+    //     acc[product.category] = acc[product.category] || [];
+
+    //     acc[product.category].push(product);
+
+    //     return acc;
+    // }, [])
+    // const flt = getData.filter(product => product.toLowerCase() == ctgr)
+
+    // console.log(flt)
     getData.map(element => {
         const { id, image, description, price, title } = element;
 
@@ -51,6 +71,14 @@ function showToScreen(getData) {
         `
 
     });
+
+}
+
+let getDataList = JSON.parse(localStorage.getItem("dataList"));
+console.log(getDataList, "data")
+
+console.log(filterBtn)
+function filterProduct() {
 
 }
 
