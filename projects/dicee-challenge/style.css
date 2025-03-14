@@ -39,3 +39,27 @@ footer {
     font-family: 'Indie Flower', cursive;
 
 }
+
+#rollDiceButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#rollDiceButton:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+#rollDiceButton:active {
+    background-color: #3e8e41;
+    transform: translateY(0);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
